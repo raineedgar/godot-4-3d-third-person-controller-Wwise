@@ -165,7 +165,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="AimRecticle" type="ColorRect" parent="PlayerUI" unique_id=1261313606]
+[node name="AimReticle" type="ColorRect" parent="PlayerUI" unique_id=1261313606]
 unique_name_in_owner = true
 layout_mode = 0
 anchor_left = 0.5
@@ -213,7 +213,7 @@ render_target_update_mode = 4
 [node name="Coin" parent="PlayerUI/CoinsContainer/SubViewportContainer/SubViewport" unique_id=1210448026 instance=ExtResource("8_6qxxt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.812403)
 
-[node name="godot_coin" parent="PlayerUI/CoinsContainer/SubViewportContainer/SubViewport/Coin" index="0"]
+[node name="godot_coin" parent="PlayerUI/CoinsContainer/SubViewportContainer/SubViewport/Coin" index="0" unique_id=1900794341]
 transform = Transform3D(0.278847, 0, 0.960336, 0, 1, 0, -0.960336, 0, 0.278847, 0, 0, 0)
 y_amplitude = 0.0
 

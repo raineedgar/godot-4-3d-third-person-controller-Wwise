@@ -19,16 +19,16 @@ func _on_secondary_action_timer_timeout():
 
 func idle():
 	_main_state_machine.travel("Idle")
-	
+
 func walk():
 	_main_state_machine.travel("Walk")
-	
+
 func shake():
 	_main_state_machine.travel("Shake")
-	
+
 func attack():
 	_main_state_machine.travel("Attack")
-	
+
 func power_off():
 	_main_state_machine.travel("PowerOff")
 	_secondary_action_timer.stop()

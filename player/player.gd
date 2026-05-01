@@ -1,4 +1,5 @@
-class_name Player extends CharacterBody3D
+class_name Player
+extends CharacterBody3D
 
 signal weapon_switched(weapon_name: String)
 
@@ -37,7 +38,7 @@ enum WEAPON_TYPE { DEFAULT, GRENADE }
 @onready var _ground_shapecast: ShapeCast3D = $GroundShapeCast
 @onready var _grenade_aim_controller: GrenadeLauncher = $GrenadeLauncher
 @onready var _character_skin: CharacterSkin = $CharacterRotationRoot/CharacterSkin
-@onready var _ui_aim_recticle: ColorRect = %AimRecticle
+@onready var _ui_aim_reticle: ColorRect = %AimReticle
 @onready var _ui_coins_container: HBoxContainer = %CoinsContainer
 @onready var _step_sound: AudioStreamPlayer3D = $StepSound
 @onready var _landing_sound: AudioStreamPlayer3D = $LandingSound
@@ -118,12 +119,12 @@ func _physics_process(delta: float) -> void:
 		_camera_controller.set_pivot(_camera_controller.CAMERA_PIVOT.OVER_SHOULDER)
 		_grenade_aim_controller.throw_direction = _camera_controller.camera.quaternion * Vector3.FORWARD
 		_grenade_aim_controller.from_look_position = _camera_controller.camera.global_position
-		_ui_aim_recticle.visible = true
+		_ui_aim_reticle.visible = true
 	else:
 		_camera_controller.set_pivot(_camera_controller.CAMERA_PIVOT.THIRD_PERSON)
 		_grenade_aim_controller.throw_direction = _last_strong_direction
 		_grenade_aim_controller.from_look_position = global_position
-		_ui_aim_recticle.visible = false
+		_ui_aim_reticle.visible = false
 
 	# Update attack state and position
 

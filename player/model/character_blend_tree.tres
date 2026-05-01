@@ -5,13 +5,13 @@
 [sub_resource type="AnimationNodeAdd2" id="AnimationNodeAdd2_766tv"]
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_080es"]
-animation = &"Godot Custom Animations/simple_blink"
+animation = &"custom_animations/simple_blink"
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_cakye"]
 animation = &"simple_punch"
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_u6r87"]
-animation = &"Godot Custom Animations/default_heartbeat"
+animation = &"custom_animations/default_heartbeat"
 
 [sub_resource type="AnimationNodeOneShot" id="AnimationNodeOneShot_rfqjk"]
 filter_enabled = true
@@ -89,16 +89,16 @@ transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition
 graph_offset = Vector2(4, -47)
 
 [resource]
-graph_offset = Vector2(-458.41855, 0)
+graph_offset = Vector2(-296.84818, -23.936207)
 nodes/output/position = Vector2(780, 80)
 nodes/Add2/node = SubResource("AnimationNodeAdd2_766tv")
 nodes/Add2/position = Vector2(260, 80)
 "nodes/Add2 2/node" = SubResource("AnimationNodeAdd2_dpb3n")
 "nodes/Add2 2/position" = Vector2(540, 80)
 nodes/Animation/node = SubResource("AnimationNodeAnimation_u6r87")
-nodes/Animation/position = Vector2(-160, 80)
+nodes/Animation/position = Vector2(-176, 32)
 "nodes/Animation 2/node" = SubResource("AnimationNodeAnimation_080es")
-"nodes/Animation 2/position" = Vector2(-160, 200)
+"nodes/Animation 2/position" = Vector2(-160, 224)
 "nodes/Animation 3/node" = SubResource("AnimationNodeAnimation_cakye")
 "nodes/Animation 3/position" = Vector2(20, 520)
 nodes/PunchOneShot/node = SubResource("AnimationNodeOneShot_rfqjk")
