@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://csp3qobcu742g"
+path="res://.godot/imported/AK Amb Hamburg Fabrik.wav-2920f064c26ce0f21574248c77ba9ace.sample"
+
+[deps]
+
+source_file="res://Wwise/Originals/Plugins/Wwise Convolution Reverb/AK_Factory_IR_Amb/Large Spaces/AK Amb Hamburg Fabrik.wav"
+dest_files=["res://.godot/imported/AK Amb Hamburg Fabrik.wav-2920f064c26ce0f21574248c77ba9ace.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

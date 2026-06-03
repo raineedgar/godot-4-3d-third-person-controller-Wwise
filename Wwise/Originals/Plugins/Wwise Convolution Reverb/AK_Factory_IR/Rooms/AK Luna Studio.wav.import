@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cnr7eebqw0oeg"
+path="res://.godot/imported/AK Luna Studio.wav-fc3b7993e269380c219b3c45c86f8d2c.sample"
+
+[deps]
+
+source_file="res://Wwise/Originals/Plugins/Wwise Convolution Reverb/AK_Factory_IR/Rooms/AK Luna Studio.wav"
+dest_files=["res://.godot/imported/AK Luna Studio.wav-fc3b7993e269380c219b3c45c86f8d2c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

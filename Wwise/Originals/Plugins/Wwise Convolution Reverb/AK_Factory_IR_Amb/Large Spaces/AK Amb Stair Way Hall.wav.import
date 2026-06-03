@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cgh5w2huvg0l3"
+path="res://.godot/imported/AK Amb Stair Way Hall.wav-ce8d2f35e81684afe5b84041f46ca8a2.sample"
+
+[deps]
+
+source_file="res://Wwise/Originals/Plugins/Wwise Convolution Reverb/AK_Factory_IR_Amb/Large Spaces/AK Amb Stair Way Hall.wav"
+dest_files=["res://.godot/imported/AK Amb Stair Way Hall.wav-ce8d2f35e81684afe5b84041f46ca8a2.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

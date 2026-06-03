@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c415yjcl3561x"
+path="res://.godot/imported/AK Brasilien Halle.wav-2366deea4cd2bbc0235c01108aad4b05.sample"
+
+[deps]
+
+source_file="res://Wwise/Originals/Plugins/Wwise Convolution Reverb/AK_Factory_IR/Halls/AK Brasilien Halle.wav"
+dest_files=["res://.godot/imported/AK Brasilien Halle.wav-2366deea4cd2bbc0235c01108aad4b05.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

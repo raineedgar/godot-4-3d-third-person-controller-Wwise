@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://p536ypshhnfe"
+path="res://.godot/imported/AK Berlin Stadtbad.wav-9f9d59300bce4e3c0881e983bdc039de.sample"
+
+[deps]
+
+source_file="res://Wwise/Originals/Plugins/Wwise Convolution Reverb/AK_Factory_IR/Halls/AK Berlin Stadtbad.wav"
+dest_files=["res://.godot/imported/AK Berlin Stadtbad.wav-9f9d59300bce4e3c0881e983bdc039de.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
