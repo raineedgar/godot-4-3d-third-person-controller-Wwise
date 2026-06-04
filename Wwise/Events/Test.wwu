@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{E4149843-E7EC-47BB-BBE5-C4EA46DF8374}" SchemaVersion="133">
 	<Events>
-		<WorkUnit Name="Test" ID="{E4149843-E7EC-47BB-BBE5-C4EA46DF8374}" PersistMode="Standalone"/>
+		<WorkUnit Name="Test" ID="{E4149843-E7EC-47BB-BBE5-C4EA46DF8374}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="test_tone_lp" ID="{A0298CD5-3CCF-43EE-96E3-0AAC746A5B44}">
+					<ChildrenList>
+						<Action Name="" ID="{6F66586B-D861-4FA3-BA07-02E470FD754A}" ShortID="438355951">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="test_tone_lp_01" ID="{69A8DF2C-0466-4C60-ACD1-685BAAFE9DB4}" WorkUnitID="{1DDE8769-A9FB-47D8-98EC-2613D73EDCF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="test_beep" ID="{0684AE7A-8F43-4771-926F-AFF978497BAC}">
+					<ChildrenList>
+						<Action Name="" ID="{45A4EFDF-FFEB-4D09-9AF9-F842C4834339}" ShortID="740690977">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="test_beep_01" ID="{45841B54-5D3C-445A-8C30-9229DE21525E}" WorkUnitID="{1DDE8769-A9FB-47D8-98EC-2613D73EDCF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
