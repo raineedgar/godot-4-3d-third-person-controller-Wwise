@@ -7,8 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://c0mo8tek77du4" path="res://player/character_skin.tscn" id="4_ign62"]
 [ext_resource type="Script" uid="uid://dtf17612eybdg" path="res://player/coins_container.gd" id="7_8eehq"]
 [ext_resource type="PackedScene" uid="uid://cqw64w6kb0fyg" path="res://player/coin/coin_visuals/coin_model.tscn" id="8_6qxxt"]
-[ext_resource type="AudioStream" uid="uid://bx0t7f2nuk2lr" path="res://player/sounds/03_step_grass_03.wav" id="10_wx4h4"]
-[ext_resource type="AudioStream" uid="uid://cbcb2d63weegs" path="res://player/sounds/45_landing_01.wav" id="11_3s4i7"]
+[ext_resource type="WwiseEvent" uid="uid://byasl4jyyuyra" path="res://Wwise/resources/Event/{0684AE7A-8F43-4771-926F-AFF978497BAC}.tres" id="8_rgyib"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8x2xm"]
 
@@ -120,6 +119,8 @@ fov = 50.0
 transform = Transform3D(1, 0, -7.10543e-15, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 target_position = Vector3(0, 0, -100)
 debug_shape_custom_color = Color(0, 0, 0, 0)
+
+[node name="AkListener3D" type="AkListener3D" parent="CameraController/PlayerCamera" unique_id=1397426222]
 
 [node name="GrenadeLauncher" parent="." unique_id=1056604266 instance=ExtResource("3_54qc4")]
 
@@ -233,12 +234,10 @@ text = "0"
 wait_time = 3.0
 one_shot = true
 
-[node name="StepSound" type="AudioStreamPlayer3D" parent="." unique_id=514297165]
-stream = ExtResource("10_wx4h4")
-volume_db = 1.0
+[node name="StepSound" type="AkEvent3D" parent="." unique_id=1837100238]
+event = ExtResource("8_rgyib")
 
-[node name="LandingSound" type="AudioStreamPlayer3D" parent="." unique_id=1817795993]
-stream = ExtResource("11_3s4i7")
-volume_db = 1.0
+[node name="LandingSound" type="AkEvent3D" parent="." unique_id=2090050758]
+event = ExtResource("8_rgyib")
 
 [editable path="PlayerUI/CoinsContainer/SubViewportContainer/SubViewport/Coin"]

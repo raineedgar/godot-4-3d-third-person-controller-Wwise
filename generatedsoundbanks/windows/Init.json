@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{AA4A1066-21FE-E6AF-1A08-C40DB7843A95}",
+    "Hash": "{8A643CC7-E8B6-AF35-7870-1F891F7D6B68}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -31,15 +31,163 @@
        "GUID": "{0947389B-410C-46C8-9720-7EEAAC136CCB}",
        "LibName": "System",
        "LibId": "11403271"
+      },
+      {
+       "Id": "4230635974",
+       "Name": "Default_Motion_Device",
+       "ObjectPath": "\\Devices\\Factory Motion\\Default_Motion_Device",
+       "GUID": "{FE3B98C3-CC9B-47D4-8A6B-6E8C81B55CC0}",
+       "LibName": "Motion",
+       "LibId": "33226759"
       }
      ]
     },
     "Busses": [
      {
+      "Id": "393239870",
+      "Name": "SFX",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX",
+      "GUID": "{72540378-C7D9-4E66-B3DB-D75727DEC455}"
+     },
+     {
+      "Id": "985987111",
+      "Name": "Motion Factory Bus",
+      "ObjectPath": "\\Busses\\Factory Motion\\Motion Factory Bus",
+      "GUID": "{2AF9B9C6-6EF1-46E9-B5F2-E30C9E602C74}"
+     },
+     {
       "Id": "2246998526",
       "Name": "Main Audio Bus",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus",
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     },
+     {
+      "Id": "3170124113",
+      "Name": "Voice",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Voice",
+      "GUID": "{9C19BA10-BAB1-40A6-9880-838A98354EB6}"
+     },
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music",
+      "GUID": "{702FA58C-56CD-4668-B2CA-3764B2471B39}"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "796049864",
+      "Name": "RPM",
+      "ObjectPath": "\\Game Parameters\\Factory Motion\\RPM",
+      "GUID": "{9112AA05-F577-44FD-9F4E-4424158129E6}"
+     },
+     {
+      "Id": "822163944",
+      "Name": "SS_Air_RPM",
+      "ObjectPath": "\\Game Parameters\\Factory Soundseed Air Game Syncs\\SS_Air_RPM",
+      "GUID": "{A34890AB-B9D5-4526-A64D-5290C43EF2DC}"
+     },
+     {
+      "Id": "1029930033",
+      "Name": "SS_Air_Fury",
+      "ObjectPath": "\\Game Parameters\\Factory Soundseed Air Game Syncs\\SS_Air_Fury",
+      "GUID": "{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"
+     },
+     {
+      "Id": "1351367891",
+      "Name": "SS_Air_Fear",
+      "ObjectPath": "\\Game Parameters\\Factory Soundseed Air Game Syncs\\SS_Air_Fear",
+      "GUID": "{F72E0659-4346-4E1C-A1B1-DAB46A05101E}"
+     },
+     {
+      "Id": "1524500807",
+      "Name": "Playback_Rate",
+      "ObjectPath": "\\Game Parameters\\Factory Motion\\Playback_Rate",
+      "GUID": "{28387EE3-C13A-4316-B9C3-DB5C521624AF}"
+     },
+     {
+      "Id": "1656280998",
+      "Name": "RPM_FA_SSGrain",
+      "ObjectPath": "\\Game Parameters\\Factory Soundseed Grain\\RPM_FA_SSGrain",
+      "GUID": "{C092E65B-E5C4-4C55-8A68-576E98BBFF39}"
+     },
+     {
+      "Id": "1791284502",
+      "Name": "Proximity_FA_SSGrain",
+      "ObjectPath": "\\Game Parameters\\Factory Soundseed Grain\\Proximity_FA_SSGrain",
+      "GUID": "{05F1ABB4-7338-42BC-A378-B1E2B12EE3CB}"
+     },
+     {
+      "Id": "2317409760",
+      "Name": "Instrument_FA_SSGrain",
+      "ObjectPath": "\\Game Parameters\\Factory Soundseed Grain\\Instrument_FA_SSGrain",
+      "GUID": "{6279AF44-C082-4608-981E-9A63D1EE7555}"
+     },
+     {
+      "Id": "2428833394",
+      "Name": "Simulation_FA_SSGrain",
+      "ObjectPath": "\\Game Parameters\\Factory Soundseed Grain\\Simulation_FA_SSGrain",
+      "GUID": "{71905071-0A79-42FE-9CD6-C631171DC3A4}"
+     },
+     {
+      "Id": "2481728872",
+      "Name": "Immersion_FA_SSGrain",
+      "ObjectPath": "\\Game Parameters\\Factory Soundseed Grain\\Immersion_FA_SSGrain",
+      "GUID": "{3F41E622-166C-4532-BEF7-1DC9FF7EAB94}"
+     },
+     {
+      "Id": "2648548617",
+      "Name": "SS_Air_Month",
+      "ObjectPath": "\\Game Parameters\\Factory Soundseed Air Game Syncs\\SS_Air_Month",
+      "GUID": "{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"
+     },
+     {
+      "Id": "2715217995",
+      "Name": "Density_FA_SSGrain",
+      "ObjectPath": "\\Game Parameters\\Factory Soundseed Grain\\Density_FA_SSGrain",
+      "GUID": "{63B3F29E-04F3-4887-BA1A-4D7694644B24}"
+     },
+     {
+      "Id": "3002758120",
+      "Name": "SS_Air_Freefall",
+      "ObjectPath": "\\Game Parameters\\Factory Soundseed Air Game Syncs\\SS_Air_Freefall",
+      "GUID": "{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}"
+     },
+     {
+      "Id": "3074696722",
+      "Name": "SS_Air_Size",
+      "ObjectPath": "\\Game Parameters\\Factory Soundseed Air Game Syncs\\SS_Air_Size",
+      "GUID": "{1329EBEF-A193-472E-A38C-64668B494879}"
+     },
+     {
+      "Id": "3203397129",
+      "Name": "SS_Air_TimeOfDay",
+      "ObjectPath": "\\Game Parameters\\Factory Soundseed Air Game Syncs\\SS_Air_TimeOfDay",
+      "GUID": "{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"
+     },
+     {
+      "Id": "3671138082",
+      "Name": "New_Game_Parameter",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\New_Game_Parameter",
+      "GUID": "{BE46D828-DAAD-4E53-BDBA-F8D53B4499F6}"
+     },
+     {
+      "Id": "3715662592",
+      "Name": "SS_Air_Storm",
+      "ObjectPath": "\\Game Parameters\\Factory Soundseed Air Game Syncs\\SS_Air_Storm",
+      "GUID": "{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}"
+     },
+     {
+      "Id": "3847924954",
+      "Name": "SS_Air_Presence",
+      "ObjectPath": "\\Game Parameters\\Factory Soundseed Air Game Syncs\\SS_Air_Presence",
+      "GUID": "{E3B7811A-7B2F-490F-B44F-5FE51B468041}"
+     },
+     {
+      "Id": "4160247818",
+      "Name": "SS_Air_Turbulence",
+      "ObjectPath": "\\Game Parameters\\Factory Soundseed Air Game Syncs\\SS_Air_Turbulence",
+      "GUID": "{EDA87B19-73AA-40A0-9F19-2073606DB710}"
      }
     ],
     "AcousticTextures": [
@@ -521,6 +669,6 @@
     ]
    }
   ],
-  "FileHash": "{E2FB0AF6-5905-B7D0-4122-DE446C7C75AE}"
+  "FileHash": "{C5AF5060-5F7A-2724-5A01-83B5E7EC3AA0}"
  }
 }

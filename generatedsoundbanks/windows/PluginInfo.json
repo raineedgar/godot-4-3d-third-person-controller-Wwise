@@ -4,6 +4,13 @@
   "BasePlatform": "Windows",
   "PluginLibs": [
    {
+    "LibName": "Wwise Sine",
+    "LibId": "6553602",
+    "Type": "Source",
+    "DLL": "AkSineTone",
+    "StaticLib": "AkSineSource"
+   },
+   {
     "LibName": "System",
     "LibId": "11403271",
     "Type": "AudioDevice"
@@ -12,8 +19,15 @@
     "LibName": "No Output",
     "LibId": "11862023",
     "Type": "AudioDevice"
+   },
+   {
+    "LibName": "Motion",
+    "LibId": "33226759",
+    "Type": "AudioDevice",
+    "DLL": "AkMotion",
+    "StaticLib": "AkMotionSink"
    }
   ],
-  "FileHash": "{71F42CD2-2880-BF0B-D154-F41540A353AF}"
+  "FileHash": "{438E2846-DF53-E49A-A61D-F12799644AC8}"
  }
 }

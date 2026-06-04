@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2353979823	test_tone_lp			\Test\test_tone_lp	
+	2399047624	test_beep			\Test\test_beep	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	638630305	Sine	Wwise Sine		\Containers\Test\test_beep_01\Sine	
+	912744163	Sine	Wwise Sine		\Containers\Test\test_tone_lp_01\Sine	
+

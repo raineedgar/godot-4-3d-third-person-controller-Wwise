@@ -4,6 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{3C7CA00D-AD75-4247-85B5-62556CA23FA0}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="MasterBank" ID="{1E0FF0BC-A32C-4244-82A8-F627649BFBFD}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>10000000</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ObjectInclusionList>
 						<ObjectRef Name="Events" ID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" WorkUnitID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

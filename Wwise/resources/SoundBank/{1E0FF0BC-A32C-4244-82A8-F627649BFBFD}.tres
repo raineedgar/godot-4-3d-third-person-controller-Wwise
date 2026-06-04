@@ -1,0 +1,7 @@
+[gd_resource type="WwiseBank" format=3 uid="uid://dimjaunvt2ecr"]
+
+[resource]
+name = "MasterBank"
+id = 1542108333
+guid = "{1E0FF0BC-A32C-4244-82A8-F627649BFBFD}"
+dummy = true

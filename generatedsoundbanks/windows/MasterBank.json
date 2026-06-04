@@ -8,14 +8,66 @@
    {
     "Id": "1542108333",
     "Type": "User",
-    "GUID": "{7BD7D2F5-7C76-4CB2-8922-50D598657773}",
+    "GUID": "{1E0FF0BC-A32C-4244-82A8-F627649BFBFD}",
     "Language": "SFX",
-    "Hash": "{C3432A4E-854B-4C2C-B80F-26B08EE26C04}",
+    "Hash": "{F82AFAA5-BDEE-AC48-4F27-8BFF085CCB16}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MasterBank",
     "ShortName": "MasterBank",
-    "Path": "MasterBank.bnk"
+    "Path": "MasterBank.bnk",
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "638630305",
+       "Name": "Sine",
+       "ObjectPath": "\\Containers\\Test\\test_beep_01\\Sine",
+       "GUID": "{0BD1B974-2304-406C-B548-87D53B48955C}",
+       "LibName": "Wwise Sine",
+       "LibId": "6553602"
+      },
+      {
+       "Id": "912744163",
+       "Name": "Sine",
+       "ObjectPath": "\\Containers\\Test\\test_tone_lp_01\\Sine",
+       "GUID": "{B92F4762-7979-4970-BDD3-B6B0AD59FA7D}",
+       "LibName": "Wwise Sine",
+       "LibId": "6553602"
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "2399047624",
+      "Name": "test_beep",
+      "ObjectPath": "\\Events\\Test\\test_beep",
+      "GUID": "{0684AE7A-8F43-4771-926F-AFF978497BAC}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.2",
+      "DurationMax": "0.2",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "638630305"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2353979823",
+      "Name": "test_tone_lp",
+      "ObjectPath": "\\Events\\Test\\test_tone_lp",
+      "GUID": "{A0298CD5-3CCF-43EE-96E3-0AAC746A5B44}",
+      "DurationType": "Infinite",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "912744163"
+        }
+       ]
+      }
+     }
+    ]
    }
   ],
-  "FileHash": "{1C583A02-D8CA-6D97-3B39-86DD40D96E36}"
+  "FileHash": "{38BD6613-4EA5-AB8C-2787-1C0DF3274130}"
  }
 }

@@ -1,7 +1,12 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Main Audio Bus\SFX	
+	985987111	Motion Factory Bus			\Factory Motion\Motion Factory Bus	
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
+	3170124113	Voice			\Default Work Unit\Main Audio Bus\Voice	
+	3991942870	Music			\Default Work Unit\Main Audio Bus\Music	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
 	3859886410	System	System			
+	4230635974	Default_Motion_Device	Motion			
 

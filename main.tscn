@@ -19,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://bi31qtqv1sf2s" path="res://environment/flowers/flower_patch.tscn" id="15_jqya0"]
 [ext_resource type="PackedScene" uid="uid://cnj0t3ad178q6" path="res://demo_page/demo_page.tscn" id="16_qr75n"]
 [ext_resource type="AudioStream" uid="uid://bveh08m6w5ryf" path="res://level/music/mountain.mp3" id="17_mil5a"]
+[ext_resource type="WwiseBank" uid="uid://dimjaunvt2ecr" path="res://Wwise/resources/SoundBank/{1E0FF0BC-A32C-4244-82A8-F627649BFBFD}.tres" id="20_82xsv"]
 
 [sub_resource type="Environment" id="Environment_allox"]
 background_mode = 2
@@ -1567,7 +1568,12 @@ skeleton = NodePath("../..")
 
 [node name="StageMusic" type="AudioStreamPlayer" parent="." unique_id=2142174248]
 stream = ExtResource("17_mil5a")
+volume_db = -20.375
 autoplay = true
+
+[node name="AkBank" type="AkBank" parent="." unique_id=56088931]
+bank = ExtResource("20_82xsv")
+load_on = 2
 
 [connection signal="weapon_switched" from="Player" to="weapon_switch_ui" method="switch_to"]
 
