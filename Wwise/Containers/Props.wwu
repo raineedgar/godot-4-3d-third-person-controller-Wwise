@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FACC7EED-5C1D-4409-BB09-55D529B34B47}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="Props" ID="{FACC7EED-5C1D-4409-BB09-55D529B34B47}" PersistMode="Standalone"/>
+	</Containers>
+</WwiseDocument>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3AEA27D1-8FD8-475B-8E57-E245A6C721FA}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="Voice" ID="{3AEA27D1-8FD8-475B-8E57-E245A6C721FA}" PersistMode="Standalone"/>
+	</Containers>
+</WwiseDocument>

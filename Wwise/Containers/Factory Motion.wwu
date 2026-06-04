@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{45F59F79-DD77-478C-8337-3F8F3FFF3B84}" SchemaVersion="133">
+<WwiseDocument Type="WorkUnit" ID="{45F59F79-DD77-478C-8337-3F8F3FFF3B84}" SchemaVersion="133" RootDocumentID="{3CFDDFC4-66B6-4745-9C8A-CDD59AB21F3A}" ParentDocumentID="{125F58BF-F846-4406-9ACA-34C7A6C3E172}">
 	<Containers>
-		<WorkUnit Name="Factory Motion" ID="{45F59F79-DD77-478C-8337-3F8F3FFF3B84}" PersistMode="Standalone">
+		<WorkUnit Name="Factory Motion" ID="{45F59F79-DD77-478C-8337-3F8F3FFF3B84}" OwnerID="{125F58BF-F846-4406-9ACA-34C7A6C3E172}" PersistMode="Nested">
 			<ChildrenList>
 				<PropertyContainer Name="Motion Factory Assets" ID="{96BA32D2-D502-49E6-AFD7-B794657504A5}" ShortID="514449293">
 					<ReferenceList>

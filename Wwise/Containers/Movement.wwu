@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1C48E166-2B96-4875-B705-F3B5B47E35AE}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="Movement" ID="{1C48E166-2B96-4875-B705-F3B5B47E35AE}" PersistMode="Standalone"/>
+	</Containers>
+</WwiseDocument>

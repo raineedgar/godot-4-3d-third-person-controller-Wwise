@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CFEA6B42-B4BF-41E0-95F3-335A78ADE202}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="Environment" ID="{CFEA6B42-B4BF-41E0-95F3-335A78ADE202}" PersistMode="Standalone"/>
+	</Containers>
+</WwiseDocument>
