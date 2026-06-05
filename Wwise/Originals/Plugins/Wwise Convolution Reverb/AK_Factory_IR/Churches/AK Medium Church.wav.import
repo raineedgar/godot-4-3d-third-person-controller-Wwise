@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://npxvhlu75rn5"
+path="res://.godot/imported/AK Medium Church.wav-c2f17df5f319b7b2fc8198fd884a5eff.sample"
+
+[deps]
+
+source_file="res://Wwise/Originals/Plugins/Wwise Convolution Reverb/AK_Factory_IR/Churches/AK Medium Church.wav"
+dest_files=["res://.godot/imported/AK Medium Church.wav-c2f17df5f319b7b2fc8198fd884a5eff.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

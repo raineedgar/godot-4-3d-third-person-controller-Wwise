@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dfnws8h1muywp"
+path="res://.godot/imported/AK Blue Noise Room 03.wav-bf3619d847d821f6198d4a64c3e45594.sample"
+
+[deps]
+
+source_file="res://Wwise/Originals/Plugins/Wwise Convolution Reverb/AK_Factory_IR/Rooms/AK Blue Noise Room 03.wav"
+dest_files=["res://.godot/imported/AK Blue Noise Room 03.wav-bf3619d847d821f6198d4a64c3e45594.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cbd540vn2jghq"
+path="res://.godot/imported/AK Amb Berlin Stadtbad.wav-091d31c323894c7bfca5a31c53403322.sample"
+
+[deps]
+
+source_file="res://Wwise/Originals/Plugins/Wwise Convolution Reverb/AK_Factory_IR_Amb/Halls/AK Amb Berlin Stadtbad.wav"
+dest_files=["res://.godot/imported/AK Amb Berlin Stadtbad.wav-091d31c323894c7bfca5a31c53403322.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1DDE8769-A9FB-47D8-98EC-2613D73EDCF2}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="Test" ID="{1DDE8769-A9FB-47D8-98EC-2613D73EDCF2}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="test_beep_01" ID="{45841B54-5D3C-445A-8C30-9229DE21525E}" ShortID="92160014">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Sine" ID="{0BD1B974-2304-406C-B548-87D53B48955C}" ShortID="638630305" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
+							<PropertyList>
+								<Property Name="SineDuration" Type="Real32" Value="0.2"/>
+								<Property Name="SineFrequency" Type="Real32" Value="1000"/>
+								<Property Name="SineGain" Type="Real32" Value="-17"/>
+							</PropertyList>
+							<Language>SFX</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Sine" ID="{0BD1B974-2304-406C-B548-87D53B48955C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="test_tone_lp_01" ID="{69A8DF2C-0466-4C60-ACD1-685BAAFE9DB4}" ShortID="103276969">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Sine" ID="{B92F4762-7979-4970-BDD3-B6B0AD59FA7D}" ShortID="912744163" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
+							<PropertyList>
+								<Property Name="SineGain" Type="Real32" Value="-17"/>
+							</PropertyList>
+							<Language>SFX</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Sine" ID="{B92F4762-7979-4970-BDD3-B6B0AD59FA7D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>
