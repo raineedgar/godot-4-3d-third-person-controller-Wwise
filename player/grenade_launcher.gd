@@ -5,6 +5,9 @@ const GRENADE_SCENE := preload("res://player/grenade.tscn")
 @export var min_throw_distance := 7.0
 @export var max_throw_distance := 16.0
 @export var gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
+@export var fire_sound: WwiseEvent
+
+@onready var _audio_listener: AkListener3D = $AudioListener
 
 @onready var from_look_position := Vector3.ZERO
 @onready var throw_direction := Vector3.ZERO
@@ -37,6 +40,8 @@ func throw_grenade() -> bool:
 	get_parent().add_child(grenade)
 	grenade.global_position = _launch_point.global_position
 	grenade.throw(_throw_velocity)
+	fire_sound.post(self)
+	
 	PhysicsServer3D.body_add_collision_exception(get_parent().get_rid(), grenade.get_rid())
 	return true
 

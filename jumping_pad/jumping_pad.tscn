@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://3l3b6jwotibg" path="res://jumping_pad/jumping_pad.gd" id="1_w7mtj"]
 [ext_resource type="PackedScene" uid="uid://d3jgve1g030hy" path="res://environment/mushroom/mushroom.glb" id="2_3e4pb"]
+[ext_resource type="WwiseEvent" uid="uid://byasl4jyyuyra" path="res://Wwise/resources/Event/{0684AE7A-8F43-4771-926F-AFF978497BAC}.tres" id="2_71ca1"]
 [ext_resource type="PackedScene" uid="uid://ueivw4w2t3rj" path="res://jumping_pad/jumping_pad_visuals/jumping_pad_model.tscn" id="2_otx0r"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_dspj3"]
@@ -9,6 +10,7 @@ size = Vector3(1, 1.4, 1)
 
 [node name="JumpingPad" type="Area3D" unique_id=2095558454]
 script = ExtResource("1_w7mtj")
+bounce_sound = ExtResource("2_71ca1")
 
 [node name="mushroom" parent="." unique_id=1243719881 instance=ExtResource("2_3e4pb")]
 unique_name_in_owner = true

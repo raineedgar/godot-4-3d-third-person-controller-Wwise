@@ -120,7 +120,7 @@ transform = Transform3D(1, 0, -7.10543e-15, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 target_position = Vector3(0, 0, -100)
 debug_shape_custom_color = Color(0, 0, 0, 0)
 
-[node name="AkListener3D" type="AkListener3D" parent="CameraController/PlayerCamera" unique_id=1397426222]
+[node name="AudioListener" type="AkListener3D" parent="CameraController/PlayerCamera" unique_id=1397426222]
 
 [node name="GrenadeLauncher" parent="." unique_id=1056604266 instance=ExtResource("3_54qc4")]
 
