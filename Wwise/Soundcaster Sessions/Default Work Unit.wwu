@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{92AE389F-F504-43AE-9266-AF46DC72A638}" SchemaVersion="133">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{92AE389F-F504-43AE-9266-AF46DC72A638}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{92AE389F-F504-43AE-9266-AF46DC72A638}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Footsteps Test" ID="{6DE24656-9E70-43DB-8398-A5CC1FAE4C5E}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="mvmt_player_footsteps" ID="{816F5353-8179-4205-A27D-F2560151478D}" WorkUnitID="{7A9E3A9C-FBBB-4E67-A123-00EF5A1E48FC}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="mvmt_player_jump" ID="{94355C79-E64B-4820-BE5F-F50B12419C3A}" WorkUnitID="{7A9E3A9C-FBBB-4E67-A123-00EF5A1E48FC}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="mvmt_player_land" ID="{85724B40-2513-401A-819A-A559C949F246}" WorkUnitID="{7A9E3A9C-FBBB-4E67-A123-00EF5A1E48FC}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+					</ModuleList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
