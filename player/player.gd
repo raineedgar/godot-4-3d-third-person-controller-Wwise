@@ -53,16 +53,18 @@ enum WEAPON_TYPE { DEFAULT, GRENADE }
 @export var material_wood_hollow: WwiseSwitch
 @export var material_wood_solid: WwiseSwitch
 
+@export_group("Game Parameters")
+@export var velocity_normalised: WwiseRTPC
+
 @onready var _rotation_root: Node3D = $CharacterRotationRoot
 @onready var _camera_controller: CameraController = $CameraController
 @onready var _attack_animation_player: AnimationPlayer = $CharacterRotationRoot/MeleeAnchor/AnimationPlayer
 @onready var _ground_shapecast: ShapeCast3D = $GroundShapeCast
+@onready var _ground_raycast: RayCast3D = $GroundRayCast
 @onready var _grenade_aim_controller: GrenadeLauncher = $GrenadeLauncher
 @onready var _character_skin: CharacterSkin = $CharacterRotationRoot/CharacterSkin
 @onready var _ui_aim_reticle: ColorRect = %AimReticle
 @onready var _ui_coins_container: HBoxContainer = %CoinsContainer
-##@onready var _step_sound: AkEvent3D = $StepSound
-##@onready var _landing_sound: AkEvent3D = $LandingSound
 
 @onready var _equipped_weapon: WEAPON_TYPE = WEAPON_TYPE.DEFAULT
 @onready var _move_direction := Vector3.ZERO
@@ -88,8 +90,8 @@ func _ready() -> void:
 	if not InputMap.has_action("move_left"):
 		_register_input_actions()
 
-	_character_skin.stepwalk.connect(play_foot_step_sound, 0)
-	_character_skin.steprun.connect(play_foot_step_sound, 1)
+	_character_skin.stepwalk.connect(handle_footsteps, 0)
+	_character_skin.steprun.connect(handle_footsteps, 1)
 
 
 func _physics_process(delta: float) -> void:
@@ -255,13 +257,19 @@ func _get_camera_oriented_input() -> Vector3:
 	input.y = 0.0
 	return input
 
-
-func play_foot_step_sound(speed: int) -> void:
+func handle_footsteps(speed: int) -> void:
+	handle_surface()
 	if speed <= 0:
 		speed_walk.set_value(self)
 	else:
 		speed_run.set_value(self)
 	footstep_sound.post(self)
+
+func handle_surface() -> void:
+	var is_grass := _ground_raycast.get_collision_mask_value(9)
+	
+	
+	return
 
 
 func damage(_impact_point: Vector3, force: Vector3) -> void:

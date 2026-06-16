@@ -7,8 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://c0mo8tek77du4" path="res://player/character_skin.tscn" id="4_ign62"]
 [ext_resource type="Script" uid="uid://dtf17612eybdg" path="res://player/coins_container.gd" id="7_8eehq"]
 [ext_resource type="PackedScene" uid="uid://cqw64w6kb0fyg" path="res://player/coin/coin_visuals/coin_model.tscn" id="8_6qxxt"]
-[ext_resource type="WwiseEvent" uid="uid://osfb3x5dg60k" path="res://Wwise/resources/Event/{816F5353-8179-4205-A27D-F2560151478D}.tres" id="8_hg6s5"]
-[ext_resource type="WwiseEvent" uid="uid://byasl4jyyuyra" path="res://Wwise/resources/Event/{0684AE7A-8F43-4771-926F-AFF978497BAC}.tres" id="8_rgyib"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8x2xm"]
 
@@ -133,6 +131,15 @@ margin = 0.5
 max_results = 1
 debug_shape_custom_color = Color(0.658824, 1, 0, 1)
 
+[node name="GroundRayCast" type="RayCast3D" parent="." unique_id=386199974]
+target_position = Vector3(0, -0.545, 0)
+collision_mask = 254
+hit_from_inside = true
+hit_back_faces = false
+collide_with_areas = true
+debug_shape_custom_color = Color(0.7294118, 0, 0, 1)
+debug_shape_thickness = 4
+
 [node name="CharacterRotationRoot" type="Node3D" parent="." unique_id=1616488823]
 
 [node name="MeleeAnchor" type="Node3D" parent="CharacterRotationRoot" unique_id=668325107]
@@ -234,11 +241,5 @@ text = "0"
 [node name="Timer" type="Timer" parent="PlayerUI/CoinsContainer" unique_id=591638833]
 wait_time = 3.0
 one_shot = true
-
-[node name="StepSound" type="AkEvent3D" parent="." unique_id=1837100238]
-event = ExtResource("8_hg6s5")
-
-[node name="LandingSound" type="AkEvent3D" parent="." unique_id=2090050758]
-event = ExtResource("8_rgyib")
 
 [editable path="PlayerUI/CoinsContainer/SubViewportContainer/SubViewport/Coin"]

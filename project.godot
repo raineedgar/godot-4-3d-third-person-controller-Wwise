@@ -116,6 +116,14 @@ pause={
 3d_physics/layer_2="Level"
 3d_physics/layer_3="Coins"
 3d_physics/layer_4="Player"
+3d_physics/layer_9="Grass"
+3d_physics/layer_10="Sand"
+3d_physics/layer_11="Wood Hollow"
+3d_physics/layer_12="Wood Solid"
+3d_physics/layer_13="Plant"
+3d_physics/layer_14="Rock"
+3d_physics/layer_15="Metal"
+3d_physics/layer_16="Water"
 
 [physics]
 
