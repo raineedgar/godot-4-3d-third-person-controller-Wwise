@@ -52,6 +52,6 @@ func punch():
 
 func _step(speed: int) -> void:
 	if speed <= 0:
-		stepwalk.emit()
+		stepwalk.emit(0)
 	else:
-		steprun.emit()
+		steprun.emit(1)

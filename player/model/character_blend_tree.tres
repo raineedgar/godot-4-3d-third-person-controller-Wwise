@@ -5,13 +5,13 @@
 [sub_resource type="AnimationNodeAdd2" id="AnimationNodeAdd2_766tv"]
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_080es"]
-animation = &"custom_animations/simple_blink"
+animation = &"simple_blink"
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_cakye"]
 animation = &"simple_punch"
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_u6r87"]
-animation = &"custom_animations/default_heartbeat"
+animation = &"default_heartbeat"
 
 [sub_resource type="AnimationNodeOneShot" id="AnimationNodeOneShot_rfqjk"]
 filter_enabled = true
@@ -80,7 +80,7 @@ states/fall/position = Vector2(342, 207)
 states/ground_impact/node = SubResource("AnimationNodeAnimation_53liu")
 states/ground_impact/position = Vector2(521, 207)
 states/idle/node = SubResource("AnimationNodeAnimation_nan6l")
-states/idle/position = Vector2(330.4, 90)
+states/idle/position = Vector2(330.4, 90.159996)
 states/jump/node = SubResource("AnimationNodeAnimation_fy3xa")
 states/jump/position = Vector2(179, 207)
 states/move/node = SubResource("AnimationNodeBlendSpace1D_cfy75")
@@ -89,7 +89,7 @@ transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition
 graph_offset = Vector2(-1, 27)
 
 [resource]
-graph_offset = Vector2(-145.0864, 218.22221)
+graph_offset = Vector2(-210.86743, -37.62362)
 nodes/output/position = Vector2(780, 80)
 nodes/Add2/node = SubResource("AnimationNodeAdd2_766tv")
 nodes/Add2/position = Vector2(260, 80)
@@ -100,7 +100,7 @@ nodes/Animation/position = Vector2(-176, 32)
 "nodes/Animation 2/node" = SubResource("AnimationNodeAnimation_080es")
 "nodes/Animation 2/position" = Vector2(-160, 224)
 "nodes/Animation 3/node" = SubResource("AnimationNodeAnimation_cakye")
-"nodes/Animation 3/position" = Vector2(20, 520)
+"nodes/Animation 3/position" = Vector2(16, 624)
 nodes/PunchOneShot/node = SubResource("AnimationNodeOneShot_rfqjk")
 nodes/PunchOneShot/position = Vector2(300, 380)
 nodes/StateMachine/node = SubResource("AnimationNodeStateMachine_k7175")

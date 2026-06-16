@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 "Idle": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://player/model/animation_tracks/player_idle.anim",
+"save_to_file/fallback_path": "res://player/model/imported_animations/player_idle.anim",
 "save_to_file/keep_custom_tracks": true,
 "save_to_file/path": "uid://ro237isjqhtb",
 "settings/loop_mode": 1,
@@ -2097,7 +2097,7 @@ _subresources={
 },
 "fall": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://player/model/animation_tracks/player_fall.anim",
+"save_to_file/fallback_path": "res://player/model/imported_animations/player_fall.anim",
 "save_to_file/keep_custom_tracks": true,
 "save_to_file/path": "uid://bq57ddf0kra2t",
 "settings/loop_mode": 1,
@@ -4153,7 +4153,7 @@ _subresources={
 },
 "ground_impact": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://player/model/animation_tracks/player_land.anim",
+"save_to_file/fallback_path": "res://player/model/imported_animations/player_land.anim",
 "save_to_file/keep_custom_tracks": true,
 "save_to_file/path": "uid://7cjdgpo2qg4b",
 "settings/loop_mode": 0,
@@ -6209,7 +6209,7 @@ _subresources={
 },
 "jump": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://player/model/animation_tracks/player_jump.anim",
+"save_to_file/fallback_path": "res://player/model/imported_animations/player_jump.anim",
 "save_to_file/keep_custom_tracks": true,
 "save_to_file/path": "uid://c700eoabyhvh",
 "settings/loop_mode": 1,
@@ -8265,7 +8265,7 @@ _subresources={
 },
 "run": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://player/model/animation_tracks/player_run.anim",
+"save_to_file/fallback_path": "res://player/model/imported_animations/player_run.anim",
 "save_to_file/keep_custom_tracks": true,
 "save_to_file/path": "uid://dtphu4fnb1fid",
 "settings/loop_mode": 1,
@@ -10321,7 +10321,7 @@ _subresources={
 },
 "simple_punch": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://player/model/animation_tracks/player_punch.anim",
+"save_to_file/fallback_path": "res://player/model/imported_animations/player_punch.anim",
 "save_to_file/keep_custom_tracks": true,
 "save_to_file/path": "uid://mg0q8crm3gxm",
 "settings/loop_mode": 0,
@@ -12377,9 +12377,9 @@ _subresources={
 },
 "walk": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://player/model/animation_tracks/player_walk.anim",
+"save_to_file/fallback_path": "res://player/model/imported_animations/player_walk.anim",
 "save_to_file/keep_custom_tracks": true,
-"save_to_file/path": "uid://bw3lqul4b5kwj",
+"save_to_file/path": "uid://c6y0k5sc1dxvg",
 "settings/loop_mode": 1,
 "slice_1/end_frame": 0,
 "slice_1/loop_mode": 0,
