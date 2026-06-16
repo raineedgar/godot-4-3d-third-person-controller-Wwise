@@ -1,0 +1,11 @@
+[gd_resource type="WwiseSwitch" format=3 uid="uid://bgxi8fw45nwml"]
+
+[ext_resource type="WwiseSwitchGroup" uid="uid://p334vs7h8qtt" path="res://Wwise/resources/Switch Group/{325FC176-2541-4C39-99B5-19DAADB5EC8A}.tres" id="1_nfqxm"]
+
+[resource]
+group_ref = ExtResource("1_nfqxm")
+group_id = 3865314626
+name = "grass"
+id = 4248645337
+guid = "{32E76DD1-6954-4D0F-A73E-6BAF9545BA0F}"
+dummy = true

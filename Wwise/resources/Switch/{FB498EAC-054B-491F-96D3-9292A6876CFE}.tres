@@ -1,0 +1,11 @@
+[gd_resource type="WwiseSwitch" format=3 uid="uid://cuhooeujahh1r"]
+
+[ext_resource type="WwiseSwitchGroup" uid="uid://drvn5iskrqs1k" path="res://Wwise/resources/Switch Group/{908625DB-C11B-4798-A760-09EBDC0C3FE6}.tres" id="1_vfu5w"]
+
+[resource]
+group_ref = ExtResource("1_vfu5w")
+group_id = 1519944498
+name = "walk"
+id = 2108779966
+guid = "{FB498EAC-054B-491F-96D3-9292A6876CFE}"
+dummy = true

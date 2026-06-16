@@ -10,10 +10,300 @@
     "Type": "User",
     "GUID": "{1E0FF0BC-A32C-4244-82A8-F627649BFBFD}",
     "Language": "SFX",
-    "Hash": "{F82AFAA5-BDEE-AC48-4F27-8BFF085CCB16}",
+    "Hash": "{371DEBB3-9666-72E4-6837-645832E294CD}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MasterBank",
     "ShortName": "MasterBank",
     "Path": "MasterBank.bnk",
+    "Media": [
+     {
+      "Id": "17171743",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Grass, Jump, Start_Soundly_SND62075.wav",
+      "CachePath": "76/{76A08B11-AE0A-BEF2-D79A-0CD137A439B7}.wem"
+     },
+     {
+      "Id": "39316405",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Wood, Shoes, Jump, Heavy Landing_Soundly_SND85815.wav",
+      "CachePath": "20/{20346289-B447-5F2E-B0F9-4F12181BDE1A}.wem"
+     },
+     {
+      "Id": "54810012",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130 2.wav",
+      "CachePath": "85/{851B1212-E516-51A8-4FB8-875A9BF16ECC}.wem"
+     },
+     {
+      "Id": "77811671",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363 3.wav",
+      "CachePath": "98/{9868E1CA-4D0B-2D0F-D98C-76CEB63FE3E8}.wem"
+     },
+     {
+      "Id": "107052493",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Grass, Jump, Land 01_Soundly_SND62077.wav",
+      "CachePath": "B2/{B28CB98E-B8B5-DBC2-B1A3-0F7D098684CB}.wem"
+     },
+     {
+      "Id": "107212250",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Boots, Wood, Hollow, Jump, Land, Close_Soundly_SND125838 1.wav",
+      "CachePath": "40/{4014164D-416F-EF14-9191-E3CF875E46AA}.wem"
+     },
+     {
+      "Id": "151837089",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Wood, Shoes, Jump, Heavy Landing_Soundly_SND85815 1.wav",
+      "CachePath": "51/{519244D9-E9E9-35D1-2952-0A899F4CCCB3}.wem"
+     },
+     {
+      "Id": "256824115",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Boots, Wood, Hollow, Jump, Land, Close_Soundly_SND125838 2.wav",
+      "CachePath": "B0/{B0290934-0E02-EDF0-876C-5789D243AE45}.wem"
+     },
+     {
+      "Id": "263653341",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav",
+      "CachePath": "CA/{CA21FB62-59FD-A798-DB6F-EBA5047ECA63}.wem"
+     },
+     {
+      "Id": "270908810",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav",
+      "CachePath": "4F/{4F81C250-C193-C7A1-A79F-F2BC94DC2EF7}.wem"
+     },
+     {
+      "Id": "276692612",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Grass, Jump, Land 01_Soundly_SND62077 2.wav",
+      "CachePath": "CF/{CF92B911-194D-D42D-9286-E5480E0EBBDD}.wem"
+     },
+     {
+      "Id": "302829730",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Boots, Wood, Hollow, Jump, Land, Close_Soundly_SND125838.wav",
+      "CachePath": "BA/{BAAF139F-6C59-C1E3-8F4E-D7CBF9206CB7}.wem"
+     },
+     {
+      "Id": "334455224",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363.wav",
+      "CachePath": "FA/{FA7F0A5C-E968-DA1E-D3D4-706B5D47DDD0}.wem"
+     },
+     {
+      "Id": "353414576",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Slippers, Wood, Hollow, Jump, Land, Close_Soundly_SND128445 1.wav",
+      "CachePath": "37/{371C574A-3296-4A25-7B50-844F1F9968C9}.wem"
+     },
+     {
+      "Id": "376472262",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Wood, Shoes, Jump, Heavy Landing_Soundly_SND85815 2.wav",
+      "CachePath": "D8/{D86461B3-ED4B-D939-1507-CE6D3935B6FD}.wem"
+     },
+     {
+      "Id": "527710238",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\Footsteps, Human, Slippers, Wood, Solid, Jump, Land, Close SND128659 3.wav",
+      "CachePath": "FD/{FDB55A6D-2FF4-F23F-8C8A-F8F1AF7C91C9}.wem"
+     },
+     {
+      "Id": "540169232",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\Footsteps, Human, Slippers, Wood, Solid, Jump, Land, Close SND128659.wav",
+      "CachePath": "54/{5409CFD1-1FF5-3C18-2785-AC7CDDF5938A}.wem"
+     },
+     {
+      "Id": "581628536",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363 2.wav",
+      "CachePath": "E1/{E177C745-DAA6-DF70-168E-05CFE3BE8E5C}.wem"
+     },
+     {
+      "Id": "618613504",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Grass, Jump, Start_Soundly_SND62075 1.wav",
+      "CachePath": "93/{9338ED1A-BA70-654A-E2B5-28A1CCE95518}.wem"
+     },
+     {
+      "Id": "620150466",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363 2.wav",
+      "CachePath": "33/{331CC33F-20A9-4C15-6138-C5FE9202CF3B}.wem"
+     },
+     {
+      "Id": "701186403",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363.wav",
+      "CachePath": "A2/{A27CC76E-ACE6-2253-B5AF-52B01B866B12}.wem"
+     },
+     {
+      "Id": "728790736",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Slippers, Wood, Hollow, Jump, Land, Close_Soundly_SND128445 2.wav",
+      "CachePath": "FB/{FB57E7ED-FD57-CE2E-0FA4-4D2286507B51}.wem"
+     },
+     {
+      "Id": "752108999",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363 3.wav",
+      "CachePath": "AA/{AA9DF11A-D8AC-2D84-C393-E27E758D4826}.wem"
+     },
+     {
+      "Id": "755634811",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130 1.wav",
+      "CachePath": "B2/{B2BAEA69-24EE-4B36-E66D-D4472EA7D338}.wem"
+     },
+     {
+      "Id": "775113661",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\Footsteps, Human, Sand, Step Hard SND62094 3.wav",
+      "CachePath": "AB/{AB165565-0DA8-5EAF-71A0-003808B77C82}.wem"
+     },
+     {
+      "Id": "813652154",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\Footsteps, Human, Slippers, Wood, Solid, Jump, Land, Close SND128659 2.wav",
+      "CachePath": "1E/{1EF7CF52-08E4-D46F-BA12-45F780DCC274}.wem"
+     },
+     {
+      "Id": "823311738",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130.wav",
+      "CachePath": "9A/{9ABC32C5-5B64-3D85-09D4-817C92A00D1B}.wem"
+     },
+     {
+      "Id": "854607197",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 15.wav",
+      "CachePath": "5E/{5E782685-6F85-A381-2A45-30AC472FE61E}.wem"
+     },
+     {
+      "Id": "909718112",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\Footsteps, Human, Sand, Step Hard SND62094.wav",
+      "CachePath": "FB/{FB0E3177-8725-58F3-E04F-6143B6648A2B}.wem"
+     },
+     {
+      "Id": "910537391",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav",
+      "CachePath": "11/{11464CE8-34B6-0D09-6B81-A4D922996F7B}.wem"
+     },
+     {
+      "Id": "962363136",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 16.wav",
+      "CachePath": "CE/{CEE7FDA5-E7B0-787D-81A8-0C8243D6D20B}.wem"
+     },
+     {
+      "Id": "980730292",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Grass, Jump, Land 01_Soundly_SND62077 1.wav",
+      "CachePath": "E7/{E72D54BA-C944-4E03-F484-AB036FD990AF}.wem"
+     },
+     {
+      "Id": "986272461",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\Footsteps, Human, Sand, Step Hard SND62094 1.wav",
+      "CachePath": "A6/{A626A701-4D13-F243-E7D0-5FEB97B85844}.wem"
+     },
+     {
+      "Id": "995827336",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Slippers, Wood, Hollow, Jump, Land, Close_Soundly_SND128445 2.wav",
+      "CachePath": "A9/{A9B7972B-5431-9A4B-0905-CD83B85D5128}.wem"
+     },
+     {
+      "Id": "1003887373",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 17.wav",
+      "CachePath": "C7/{C7F3F22D-1765-CB97-9712-2F81B3F10BD6}.wem"
+     },
+     {
+      "Id": "1040763014",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundly Audio\\FEETHmn_Footsteps, Human, Grass, Jump, Start_Soundly_SND62075 2.wav",
+      "CachePath": "8F/{8F6CBEAE-BB60-C6CD-0D55-EF36BCB36963}.wem"
+     }
+    ],
     "Plugins": {
      "Custom": [
       {
@@ -35,6 +325,270 @@
      ]
     },
     "Events": [
+     {
+      "Id": "2414319249",
+      "Name": "mvmt_player_footsteps",
+      "ObjectPath": "\\Events\\Movement\\mvmt_player_footsteps",
+      "GUID": "{816F5353-8179-4205-A27D-F2560151478D}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.3124507",
+      "DurationMax": "0.7432134",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3865314626",
+         "Id": "1286116474",
+         "GUID": "{84C9E336-7B4F-4440-BB01-B28A0217A62A}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "54810012"
+         },
+         {
+          "Id": "755634811"
+         },
+         {
+          "Id": "823311738"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3865314626",
+         "Id": "803837735",
+         "GUID": "{4FE37168-217F-44E7-A26C-8E9D25D3C492}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "775113661"
+         },
+         {
+          "Id": "909718112"
+         },
+         {
+          "Id": "986272461"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3865314626",
+         "Id": "3998272824",
+         "GUID": "{868EEEA4-59AD-40C4-87A5-B8BC33C93977}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "854607197"
+         },
+         {
+          "Id": "962363136"
+         },
+         {
+          "Id": "1003887373"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3865314626",
+         "Id": "4248645337",
+         "GUID": "{32E76DD1-6954-4D0F-A73E-6BAF9545BA0F}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "263653341"
+         },
+         {
+          "Id": "270908810"
+         },
+         {
+          "Id": "910537391"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "4000148184",
+      "Name": "mvmt_player_jump",
+      "ObjectPath": "\\Events\\Movement\\mvmt_player_jump",
+      "GUID": "{94355C79-E64B-4820-BE5F-F50B12419C3A}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.2609057",
+      "DurationMax": "0.72121894",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3865314626",
+         "Id": "1286116474",
+         "GUID": "{84C9E336-7B4F-4440-BB01-B28A0217A62A}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "527710238"
+         },
+         {
+          "Id": "540169232"
+         },
+         {
+          "Id": "813652154"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3865314626",
+         "Id": "803837735",
+         "GUID": "{4FE37168-217F-44E7-A26C-8E9D25D3C492}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "334455224"
+         },
+         {
+          "Id": "620150466"
+         },
+         {
+          "Id": "752108999"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3865314626",
+         "Id": "3998272824",
+         "GUID": "{868EEEA4-59AD-40C4-87A5-B8BC33C93977}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "107212250"
+         },
+         {
+          "Id": "256824115"
+         },
+         {
+          "Id": "302829730"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3865314626",
+         "Id": "4248645337",
+         "GUID": "{32E76DD1-6954-4D0F-A73E-6BAF9545BA0F}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "17171743"
+         },
+         {
+          "Id": "618613504"
+         },
+         {
+          "Id": "1040763014"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "1137921171",
+      "Name": "mvmt_player_land",
+      "ObjectPath": "\\Events\\Movement\\mvmt_player_land",
+      "GUID": "{85724B40-2513-401A-819A-A559C949F246}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.31066677",
+      "DurationMax": "1.0954956",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3865314626",
+         "Id": "1286116474",
+         "GUID": "{84C9E336-7B4F-4440-BB01-B28A0217A62A}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "39316405"
+         },
+         {
+          "Id": "151837089"
+         },
+         {
+          "Id": "376472262"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3865314626",
+         "Id": "803837735",
+         "GUID": "{4FE37168-217F-44E7-A26C-8E9D25D3C492}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "77811671"
+         },
+         {
+          "Id": "581628536"
+         },
+         {
+          "Id": "701186403"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3865314626",
+         "Id": "3998272824",
+         "GUID": "{868EEEA4-59AD-40C4-87A5-B8BC33C93977}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "353414576"
+         },
+         {
+          "Id": "728790736"
+         },
+         {
+          "Id": "995827336"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3865314626",
+         "Id": "4248645337",
+         "GUID": "{32E76DD1-6954-4D0F-A73E-6BAF9545BA0F}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "107052493"
+         },
+         {
+          "Id": "276692612"
+         },
+         {
+          "Id": "980730292"
+         }
+        ]
+       }
+      ]
+     },
      {
       "Id": "2399047624",
       "Name": "test_beep",
@@ -65,9 +619,61 @@
        ]
       }
      }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "3865314626",
+      "Name": "material",
+      "ObjectPath": "\\Switches\\Default Work Unit\\material",
+      "GUID": "{325FC176-2541-4C39-99B5-19DAADB5EC8A}",
+      "Switches": [
+       {
+        "Id": "803837735",
+        "Name": "sand",
+        "ObjectPath": "\\Switches\\Default Work Unit\\material\\sand",
+        "GUID": "{4FE37168-217F-44E7-A26C-8E9D25D3C492}"
+       },
+       {
+        "Id": "1286116474",
+        "Name": "wood_solid",
+        "ObjectPath": "\\Switches\\Default Work Unit\\material\\wood_solid",
+        "GUID": "{84C9E336-7B4F-4440-BB01-B28A0217A62A}"
+       },
+       {
+        "Id": "2144363834",
+        "Name": "rock",
+        "ObjectPath": "\\Switches\\Default Work Unit\\material\\rock",
+        "GUID": "{1BD3D839-9EF0-4875-BB2F-18A9D98CEF07}"
+       },
+       {
+        "Id": "2473969246",
+        "Name": "metal",
+        "ObjectPath": "\\Switches\\Default Work Unit\\material\\metal",
+        "GUID": "{D8F48937-1999-4FD6-B19F-15F424953487}"
+       },
+       {
+        "Id": "3322072369",
+        "Name": "tree",
+        "ObjectPath": "\\Switches\\Default Work Unit\\material\\tree",
+        "GUID": "{AF1D7538-BF6D-4FCC-99D3-9F859A227348}"
+       },
+       {
+        "Id": "3998272824",
+        "Name": "wood_hollow",
+        "ObjectPath": "\\Switches\\Default Work Unit\\material\\wood_hollow",
+        "GUID": "{868EEEA4-59AD-40C4-87A5-B8BC33C93977}"
+       },
+       {
+        "Id": "4248645337",
+        "Name": "grass",
+        "ObjectPath": "\\Switches\\Default Work Unit\\material\\grass",
+        "GUID": "{32E76DD1-6954-4D0F-A73E-6BAF9545BA0F}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{38BD6613-4EA5-AB8C-2787-1C0DF3274130}"
+  "FileHash": "{3464C9F5-8557-E9DD-2551-0EB0F00BC82E}"
  }
 }

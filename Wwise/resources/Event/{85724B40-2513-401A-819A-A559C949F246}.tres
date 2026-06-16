@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://cg4kcqkf1ghug"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "mvmt_player_land"
+id = 1137921171
+guid = "{85724B40-2513-401A-819A-A559C949F246}"
+dummy = true

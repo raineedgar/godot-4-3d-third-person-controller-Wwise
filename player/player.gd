@@ -9,6 +9,7 @@ const COIN_SCENE := preload("coin/coin.tscn")
 enum WEAPON_TYPE { DEFAULT, GRENADE }
 
 ## Character maximum run speed on the ground.
+@export_category("Player Stats")
 @export var move_speed := 8.0
 ## Speed of shot bullets.
 @export var bullet_speed := 10.0
@@ -32,6 +33,26 @@ enum WEAPON_TYPE { DEFAULT, GRENADE }
 ## Grenade cooldown
 @export var grenade_cooldown := 0.5
 
+## Wwise events
+@export_category("Wwise")
+@export_group("Events")
+@export var footstep_sound: WwiseEvent
+@export var land_sound: WwiseEvent
+@export var jump_sound: WwiseEvent
+
+## movement_speed wwise switch
+@export_group("Switches")
+@export_subgroup("Movement Speed")
+@export var speed_walk: WwiseSwitch
+@export var speed_run: WwiseSwitch
+
+## material wwise switch
+@export_subgroup("Surface Material")
+@export var material_grass: WwiseSwitch
+@export var material_sand: WwiseSwitch
+@export var material_wood_hollow: WwiseSwitch
+@export var material_wood_solid: WwiseSwitch
+
 @onready var _rotation_root: Node3D = $CharacterRotationRoot
 @onready var _camera_controller: CameraController = $CameraController
 @onready var _attack_animation_player: AnimationPlayer = $CharacterRotationRoot/MeleeAnchor/AnimationPlayer
@@ -40,8 +61,8 @@ enum WEAPON_TYPE { DEFAULT, GRENADE }
 @onready var _character_skin: CharacterSkin = $CharacterRotationRoot/CharacterSkin
 @onready var _ui_aim_reticle: ColorRect = %AimReticle
 @onready var _ui_coins_container: HBoxContainer = %CoinsContainer
-@onready var _step_sound: AkEvent3D = $StepSound
-@onready var _landing_sound: AkEvent3D = $LandingSound
+##@onready var _step_sound: AkEvent3D = $StepSound
+##@onready var _landing_sound: AkEvent3D = $LandingSound
 
 @onready var _equipped_weapon: WEAPON_TYPE = WEAPON_TYPE.DEFAULT
 @onready var _move_direction := Vector3.ZERO
@@ -67,7 +88,8 @@ func _ready() -> void:
 	if not InputMap.has_action("move_left"):
 		_register_input_actions()
 
-	_character_skin.stepped.connect(play_foot_step_sound)
+	_character_skin.stepwalk.connect(play_foot_step_sound, 0)
+	_character_skin.steprun.connect(play_foot_step_sound, 1)
 
 
 func _physics_process(delta: float) -> void:
@@ -166,7 +188,7 @@ func _physics_process(delta: float) -> void:
 			_character_skin.set_moving(false)
 
 	if is_just_on_floor:
-		_landing_sound.post_event()
+		land_sound.post(self)
 
 	var position_before := global_position
 	move_and_slide()
@@ -234,8 +256,12 @@ func _get_camera_oriented_input() -> Vector3:
 	return input
 
 
-func play_foot_step_sound() -> void:
-	_step_sound.post_event()
+func play_foot_step_sound(speed: int) -> void:
+	if speed <= 0:
+		speed_walk.set_value(self)
+	else:
+		speed_run.set_value(self)
+	footstep_sound.post(self)
 
 
 func damage(_impact_point: Vector3, force: Vector3) -> void:

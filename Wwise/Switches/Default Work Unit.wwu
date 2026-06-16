@@ -14,6 +14,12 @@
 						<Switch Name="tree" ID="{AF1D7538-BF6D-4FCC-99D3-9F859A227348}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="movement_speed" ID="{908625DB-C11B-4798-A760-09EBDC0C3FE6}">
+					<ChildrenList>
+						<Switch Name="walk" ID="{FB498EAC-054B-491F-96D3-9292A6876CFE}"/>
+						<Switch Name="run" ID="{D782088D-FAA3-4234-A5FE-1AD5DA8ED96B}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

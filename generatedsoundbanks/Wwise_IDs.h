@@ -13,9 +13,43 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID MVMT_PLAYER_FOOTSTEPS = 2414319249U;
+        static const AkUniqueID MVMT_PLAYER_JUMP = 4000148184U;
+        static const AkUniqueID MVMT_PLAYER_LAND = 1137921171U;
         static const AkUniqueID TEST_BEEP = 2399047624U;
         static const AkUniqueID TEST_TONE_LP = 2353979823U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace MATERIAL
+        {
+            static const AkUniqueID GROUP = 3865314626U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID METAL = 2473969246U;
+                static const AkUniqueID ROCK = 2144363834U;
+                static const AkUniqueID SAND = 803837735U;
+                static const AkUniqueID TREE = 3322072369U;
+                static const AkUniqueID WOOD_HOLLOW = 3998272824U;
+                static const AkUniqueID WOOD_SOLID = 1286116474U;
+            } // namespace SWITCH
+        } // namespace MATERIAL
+
+        namespace MOVEMENT_SPEED
+        {
+            static const AkUniqueID GROUP = 1519944498U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID RUN = 712161704U;
+                static const AkUniqueID WALK = 2108779966U;
+            } // namespace SWITCH
+        } // namespace MOVEMENT_SPEED
+
+    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {

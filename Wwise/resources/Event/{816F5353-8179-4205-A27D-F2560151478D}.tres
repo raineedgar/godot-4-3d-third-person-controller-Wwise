@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://osfb3x5dg60k"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "mvmt_player_footsteps"
+id = 2414319249
+guid = "{816F5353-8179-4205-A27D-F2560151478D}"
+dummy = true

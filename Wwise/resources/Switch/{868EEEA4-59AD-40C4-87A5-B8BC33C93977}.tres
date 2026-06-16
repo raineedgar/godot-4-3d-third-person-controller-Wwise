@@ -1,0 +1,11 @@
+[gd_resource type="WwiseSwitch" format=3 uid="uid://rdtr18wgdsvh"]
+
+[ext_resource type="WwiseSwitchGroup" uid="uid://p334vs7h8qtt" path="res://Wwise/resources/Switch Group/{325FC176-2541-4C39-99B5-19DAADB5EC8A}.tres" id="1_d7wl0"]
+
+[resource]
+group_ref = ExtResource("1_d7wl0")
+group_id = 3865314626
+name = "wood_hollow"
+id = 3998272824
+guid = "{868EEEA4-59AD-40C4-87A5-B8BC33C93977}"
+dummy = true

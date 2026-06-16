@@ -2,7 +2,8 @@ class_name CharacterSkin
 extends Node3D
 
 ## Emitted in animations like running when the character's feet hit the ground.
-signal stepped
+signal stepwalk
+signal steprun
 
 @export var main_animation_player : AnimationPlayer
 
@@ -49,5 +50,8 @@ func punch():
 	animation_tree["parameters/PunchOneShot/request"] = AnimationNodeOneShot.ONE_SHOT_REQUEST_FIRE
 
 
-func _step() -> void:
-	stepped.emit()
+func _step(speed: int) -> void:
+	if speed <= 0:
+		stepwalk.emit()
+	else:
+		steprun.emit()

@@ -7,8 +7,6 @@ const GRENADE_SCENE := preload("res://player/grenade.tscn")
 @export var gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
 @export var fire_sound: WwiseEvent
 
-@onready var _audio_listener: AkListener3D = $AudioListener
-
 @onready var from_look_position := Vector3.ZERO
 @onready var throw_direction := Vector3.ZERO
 
