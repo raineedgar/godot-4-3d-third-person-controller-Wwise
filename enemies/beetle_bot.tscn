@@ -102,6 +102,7 @@ radius = 0.489449
 size = Vector3(1.4, 0.2, 1.4)
 
 [node name="GroundEnemy" type="RigidBody3D" unique_id=975349901 groups=["damageables", "targeteables"]]
+collision_layer = 16385
 axis_lock_angular_x = true
 axis_lock_angular_y = true
 axis_lock_angular_z = true

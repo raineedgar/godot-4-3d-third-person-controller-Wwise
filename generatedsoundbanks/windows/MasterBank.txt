@@ -1,8 +1,61 @@
 Event	ID	Name			Wwise Object Path	Notes
+	1137921171	mvmt_player_land			\Movement\mvmt_player_land	
 	2353979823	test_tone_lp			\Test\test_tone_lp	
 	2399047624	test_beep			\Test\test_beep	
+	2414319249	mvmt_player_footsteps			\Movement\mvmt_player_footsteps	
+	4000148184	mvmt_player_jump			\Movement\mvmt_player_jump	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3865314626	material			\Environment\material	
+
+Switch	ID	Name	Switch Group			Notes
+	114672780	plant	material			
+	803837735	sand	material			
+	1286116474	wood_solid	material			
+	2144363834	rock	material			
+	2473969246	metal	material			
+	3998272824	wood_hollow	material			
+	4248645337	grass	material			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	638630305	Sine	Wwise Sine		\Containers\Test\test_beep_01\Sine	
 	912744163	Sine	Wwise Sine		\Containers\Test\test_tone_lp_01\Sine	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	17171743	mvmt_player_jump_grass_01	.cache\76\{76A08B11-AE0A-BEF2-D79A-0CD137A439B7}.wem		\Containers\Movement\jump\player_jump\grass\mvmt_player_jump_grass_01		29774
+	39316405	mvmt_player_land_wood_solid_01	.cache\20\{20346289-B447-5F2E-B0F9-4F12181BDE1A}.wem		\Containers\Movement\land\player_land\wood_solid\mvmt_player_land_wood_solid_01		90384
+	54810012	mvmt_player_footsteps_wood_solid_03	.cache\85\{851B1212-E516-51A8-4FB8-875A9BF16ECC}.wem		\Containers\Movement\footsteps\player_footsteps\wood_solid\mvmt_player_footsteps_wood_solid_03		40582
+	77811671	mvmt_player_land_sand_03	.cache\98\{9868E1CA-4D0B-2D0F-D98C-76CEB63FE3E8}.wem		\Containers\Movement\land\player_land\sand\mvmt_player_land_sand_03		83104
+	107052493	mvmt_player_land_grass_01	.cache\B2\{B28CB98E-B8B5-DBC2-B1A3-0F7D098684CB}.wem		\Containers\Movement\land\player_land\grass\mvmt_player_land_grass_01		31694
+	107212250	mvmt_player_jump_wood_hollow_02	.cache\40\{4014164D-416F-EF14-9191-E3CF875E46AA}.wem		\Containers\Movement\jump\player_jump\wood_hollow\mvmt_player_jump_wood_hollow_02		54480
+	151837089	mvmt_player_land_wood_solid_02	.cache\51\{519244D9-E9E9-35D1-2952-0A899F4CCCB3}.wem		\Containers\Movement\land\player_land\wood_solid\mvmt_player_land_wood_solid_02		80300
+	256824115	mvmt_player_jump_wood_hollow_03	.cache\B0\{B0290934-0E02-EDF0-876C-5789D243AE45}.wem		\Containers\Movement\jump\player_jump\wood_hollow\mvmt_player_jump_wood_hollow_03		65510
+	263653341	mvmt_player_footsteps_grass_02	.cache\D8\{D8901454-6C09-4AA8-D667-41A40648DD38}.wem		\Containers\Movement\footsteps\player_footsteps\grass\mvmt_player_footsteps_grass_02		67872
+	270908810	mvmt_player_footsteps_grass_03	.cache\4F\{4F81C250-C193-C7A1-A79F-F2BC94DC2EF7}.wem		\Containers\Movement\footsteps\player_footsteps\grass\mvmt_player_footsteps_grass_03		57340
+	276692612	mvmt_player_land_grass_03	.cache\CF\{CF92B911-194D-D42D-9286-E5480E0EBBDD}.wem		\Containers\Movement\land\player_land\grass\mvmt_player_land_grass_03		34402
+	302829730	mvmt_player_jump_wood_hollow_01	.cache\BA\{BAAF139F-6C59-C1E3-8F4E-D7CBF9206CB7}.wem		\Containers\Movement\jump\player_jump\wood_hollow\mvmt_player_jump_wood_hollow_01		64596
+	334455224	mvmt_player_jump_sand_01	.cache\FA\{FA7F0A5C-E968-DA1E-D3D4-706B5D47DDD0}.wem		\Containers\Movement\jump\player_jump\sand\mvmt_player_jump_sand_01		53168
+	353414576	mvmt_player_land_wood_hollow_02	.cache\37\{371C574A-3296-4A25-7B50-844F1F9968C9}.wem		\Containers\Movement\land\player_land\wood_hollow\mvmt_player_land_wood_hollow_02		57890
+	376472262	mvmt_player_land_wood_solid_03	.cache\D8\{D86461B3-ED4B-D939-1507-CE6D3935B6FD}.wem		\Containers\Movement\land\player_land\wood_solid\mvmt_player_land_wood_solid_03		82804
+	527710238	mvmt_player_jump_wood_solid_03	.cache\FD\{FDB55A6D-2FF4-F23F-8C8A-F8F1AF7C91C9}.wem		\Containers\Movement\jump\player_jump\wood_solid\mvmt_player_jump_wood_solid_03		38480
+	540169232	mvmt_player_jump_wood_solid_01	.cache\54\{5409CFD1-1FF5-3C18-2785-AC7CDDF5938A}.wem		\Containers\Movement\jump\player_jump\wood_solid\mvmt_player_jump_wood_solid_01		33294
+	581628536	mvmt_player_land_sand_02	.cache\E1\{E177C745-DAA6-DF70-168E-05CFE3BE8E5C}.wem		\Containers\Movement\land\player_land\sand\mvmt_player_land_sand_02		97592
+	618613504	mvmt_player_jump_grass_02	.cache\93\{9338ED1A-BA70-654A-E2B5-28A1CCE95518}.wem		\Containers\Movement\jump\player_jump\grass\mvmt_player_jump_grass_02		31424
+	620150466	mvmt_player_jump_sand_02	.cache\33\{331CC33F-20A9-4C15-6138-C5FE9202CF3B}.wem		\Containers\Movement\jump\player_jump\sand\mvmt_player_jump_sand_02		61128
+	701186403	mvmt_player_land_sand_01	.cache\A2\{A27CC76E-ACE6-2253-B5AF-52B01B866B12}.wem		\Containers\Movement\land\player_land\sand\mvmt_player_land_sand_01		104820
+	728790736	mvmt_player_land_wood_hollow_01	.cache\FB\{FB57E7ED-FD57-CE2E-0FA4-4D2286507B51}.wem		\Containers\Movement\land\player_land\wood_hollow\mvmt_player_land_wood_hollow_01		49864
+	752108999	mvmt_player_jump_sand_03	.cache\AA\{AA9DF11A-D8AC-2D84-C393-E27E758D4826}.wem		\Containers\Movement\jump\player_jump\sand\mvmt_player_jump_sand_03		87668
+	755634811	mvmt_player_footsteps_wood_solid_02	.cache\B2\{B2BAEA69-24EE-4B36-E66D-D4472EA7D338}.wem		\Containers\Movement\footsteps\player_footsteps\wood_solid\mvmt_player_footsteps_wood_solid_02		38478
+	775113661	mvmt_player_footsteps_sand_03	.cache\AB\{AB165565-0DA8-5EAF-71A0-003808B77C82}.wem		\Containers\Movement\footsteps\player_footsteps\sand\mvmt_player_footsteps_sand_03		66810
+	813652154	mvmt_player_jump_wood_solid_02	.cache\1E\{1EF7CF52-08E4-D46F-BA12-45F780DCC274}.wem		\Containers\Movement\jump\player_jump\wood_solid\mvmt_player_jump_wood_solid_02		35786
+	823311738	mvmt_player_footsteps_wood_solid_01	.cache\9A\{9ABC32C5-5B64-3D85-09D4-817C92A00D1B}.wem		\Containers\Movement\footsteps\player_footsteps\wood_solid\mvmt_player_footsteps_wood_solid_01		37754
+	854607197	mvmt_player_footsteps_wood_hollow_01	.cache\5E\{5E782685-6F85-A381-2A45-30AC472FE61E}.wem		\Containers\Movement\footsteps\player_footsteps\wood_hollow\mvmt_player_footsteps_wood_hollow_01		71664
+	909718112	mvmt_player_footsteps_sand_01	.cache\FB\{FB0E3177-8725-58F3-E04F-6143B6648A2B}.wem		\Containers\Movement\footsteps\player_footsteps\sand\mvmt_player_footsteps_sand_01		45798
+	910537391	mvmt_player_footsteps_grass_01	.cache\11\{11464CE8-34B6-0D09-6B81-A4D922996F7B}.wem		\Containers\Movement\footsteps\player_footsteps\grass\mvmt_player_footsteps_grass_01		57288
+	962363136	mvmt_player_footsteps_wood_hollow_02	.cache\CE\{CEE7FDA5-E7B0-787D-81A8-0C8243D6D20B}.wem		\Containers\Movement\footsteps\player_footsteps\wood_hollow\mvmt_player_footsteps_wood_hollow_02		63716
+	980730292	mvmt_player_land_grass_02	.cache\E7\{E72D54BA-C944-4E03-F484-AB036FD990AF}.wem		\Containers\Movement\land\player_land\grass\mvmt_player_land_grass_02		35906
+	986272461	mvmt_player_footsteps_sand_02	.cache\A6\{A626A701-4D13-F243-E7D0-5FEB97B85844}.wem		\Containers\Movement\footsteps\player_footsteps\sand\mvmt_player_footsteps_sand_02		42710
+	995827336	mvmt_player_land_wood_hollow_03	.cache\A9\{A9B7972B-5431-9A4B-0905-CD83B85D5128}.wem		\Containers\Movement\land\player_land\wood_hollow\mvmt_player_land_wood_hollow_03		99360
+	1003887373	mvmt_player_footsteps_wood_hollow_03	.cache\C7\{C7F3F22D-1765-CB97-9712-2F81B3F10BD6}.wem		\Containers\Movement\footsteps\player_footsteps\wood_hollow\mvmt_player_footsteps_wood_hollow_03		71600
+	1040763014	mvmt_player_jump_grass_03	.cache\8F\{8F6CBEAE-BB60-C6CD-0D55-EF36BCB36963}.wem		\Containers\Movement\jump\player_jump\grass\mvmt_player_jump_grass_03		36918
 

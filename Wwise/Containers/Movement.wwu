@@ -1,6 +1,3250 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1C48E166-2B96-4875-B705-F3B5B47E35AE}" SchemaVersion="133">
 	<Containers>
-		<WorkUnit Name="Movement" ID="{1C48E166-2B96-4875-B705-F3B5B47E35AE}" PersistMode="Standalone"/>
+		<WorkUnit Name="Movement" ID="{1C48E166-2B96-4875-B705-F3B5B47E35AE}" PersistMode="Standalone">
+			<ChildrenList>
+				<PropertyContainer Name="footsteps" ID="{CF57AD64-093B-4820-B8C5-16D7FFC345B8}" ShortID="158293753">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="player_footsteps" ID="{3C86B364-22F8-43F5-85D2-37609F736E1F}" ShortID="769812826">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="grass" ID="{32E76DD1-6954-4D0F-A73E-6BAF9545BA0F}" WorkUnitID="{BC628AE4-F5CD-4360-A58A-AF99AB6E9AB6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="material" ID="{325FC176-2541-4C39-99B5-19DAADB5EC8A}" WorkUnitID="{BC628AE4-F5CD-4360-A58A-AF99AB6E9AB6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="grass" ID="{C00F4283-C26A-43F6-B074-9985EBE7562D}" ShortID="197869325">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{6B4B25B7-1C0D-4BE4-92E2-66E883CE9EA8}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BC170171-AB14-450F-9466-71687E319456}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="mvmt_player_footsteps_grass_01" ID="{F83F8BB7-7029-412C-940F-120981CA3E71}" ShortID="539275180">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{404718BC-2551-4266-A3DD-2CB8BAB5D279}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="910537391"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{404718BC-2551-4266-A3DD-2CB8BAB5D279}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_footsteps_grass_02" ID="{B7120D11-9E37-412C-B6D1-901E7D3AFD0B}" ShortID="956213680">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{0F324252-5BCB-4E1F-A7A9-7F590D207B9B}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.63608"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.33758"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="263653341"/>
+													</MediaIDList>
+													<ObjectLists>
+														<ObjectList Name="Markers">
+															<Marker Name="" ID="{D965574C-46CC-455E-878D-28062A4C9754}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{D63C0AD9-9DA9-439B-B16A-C54A1D336A14}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="0.90271"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{843C2962-74A1-4D90-A96B-8591182AD2B2}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="1.80471"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{F177D6B6-8263-42D3-AAB6-F069231F8ABB}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="2.68949"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{4D1346EB-34C9-4847-B0D2-385BDDBD3E8C}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="3.64264"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{1A11C86F-95B2-448D-9161-F54A236653A1}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="4.61174"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{00B75D9D-40AF-4E77-8DD0-66CC893820AB}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="5.55295"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{5D6E38BB-262C-42FC-8A30-CCBCE73525B3}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="6.45447"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{962AC31F-F0F7-4978-B3F4-AC5B020FF5BC}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="7.35076"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{AD0B04A8-CA14-42DA-BCC4-AEE09A475AFD}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="8.30425"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{AF7A6E55-ED0A-4C64-948A-267083272FAE}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="9.13917"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{0DECECD9-39C8-428F-84AE-2905C50B18DE}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="10.04468"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{D4F7F76D-6E80-4447-83BC-3F9ED9026DD3}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="10.91252"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{8AB09153-58FC-4111-9242-10EB580F4F8C}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="11.8138"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{3D13A278-DD5C-49AD-B625-0A0895F98912}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="12.67352"/>
+																</PropertyList>
+															</Marker>
+														</ObjectList>
+													</ObjectLists>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{0F324252-5BCB-4E1F-A7A9-7F590D207B9B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_footsteps_grass_03" ID="{39B5E40F-3B8B-4493-9856-23667ECE94A9}" ShortID="177700236">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{B4E99F9D-1E10-4BF1-AD42-2FCE97A684A5}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.79479"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.39043"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="270908810"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{B4E99F9D-1E10-4BF1-AD42-2FCE97A684A5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="sand" ID="{00C735FF-62F0-40BC-879D-E983667EF1BC}" ShortID="115823090">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F6C71A39-9CEB-4661-AF8C-CD4202802C32}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{1B363102-F4F2-4710-B7A8-DA012887A495}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="mvmt_player_footsteps_sand_01" ID="{D98F60B4-D0E0-41CB-8539-1742EA8219E9}" ShortID="1063637034">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{78D7B86D-0CF0-4287-9BBD-1D219941ACBA}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="910537391"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094" ID="{77223939-5C18-43ED-8AB4-3FEC1EB04B61}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.82627"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.30233"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="909718112"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps, Human, Sand, Step Hard SND62094" ID="{77223939-5C18-43ED-8AB4-3FEC1EB04B61}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_footsteps_sand_02" ID="{67028533-2191-44CC-AB24-224000CE8C47}" ShortID="305645194">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{E10B9143-43DC-48B0-8B7F-1B6323B34B1E}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.63608"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.33758"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="263653341"/>
+													</MediaIDList>
+													<ObjectLists>
+														<ObjectList Name="Markers">
+															<Marker Name="" ID="{04422D3A-E0C1-48B0-9AF1-1DB7C870E2D4}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{EE8F0F30-DD41-4DFF-90FC-BF61A93D3B42}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="0.90271"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{E0FF8634-46AF-4F1F-9BE0-EC685A403CA0}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="1.80471"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{B274DCDE-81C2-4835-B420-EC20192544CF}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="2.68949"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{3A254BAB-0463-47D8-9BD6-E0D3143F4D43}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="3.64264"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{3CDA05DE-4D39-413F-A511-02CBB9B4191B}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="4.61174"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{1C67579F-F459-4202-9647-5A163A2C28D2}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="5.55295"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{9BD7E751-3696-4928-BDCD-2F7F9D0EDB44}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="6.45447"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{BD10F652-26A9-453D-ADDF-4A2DE1150ECE}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="7.35076"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{0B04C4F9-677E-4662-BE5E-443870A9F875}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="8.30425"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{E8322486-3B17-4893-9441-4504118D0300}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="9.13917"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{27222B99-DAE9-4D7D-9680-4F87DE0C0285}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="10.04468"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{09FB814F-4EB1-42FB-98B7-59A169AC47DC}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="10.91252"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{464B509B-4F2F-45E2-A571-5C1C171526B2}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="11.8138"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{43B2E5E6-C102-4A3D-A8F1-1FC85387261A}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="12.67352"/>
+																</PropertyList>
+															</Marker>
+														</ObjectList>
+													</ObjectLists>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094 1" ID="{3150EF0F-5312-4056-8982-FB2EF97CE4AB}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.77291"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.21614"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="986272461"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps, Human, Sand, Step Hard SND62094 1" ID="{3150EF0F-5312-4056-8982-FB2EF97CE4AB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_footsteps_sand_03" ID="{A6D2EC34-FF61-451C-9CD1-8BA1455B29E8}" ShortID="687483627">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{6959AFDD-09CE-411D-A2C3-89989C06BF83}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.79479"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.39043"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="270908810"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094 3" ID="{93B201BA-DB3C-4EE6-AAC8-7B02FAFDF3CF}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.52257"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.21751"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="775113661"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps, Human, Sand, Step Hard SND62094 3" ID="{93B201BA-DB3C-4EE6-AAC8-7B02FAFDF3CF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="wood_hollow" ID="{17873389-10DB-41ED-9F47-2DEFBDCFB126}" ShortID="946277631">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{FDC98B4B-9DCE-4C89-920C-C9795270ACA4}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0ED99696-6496-4A69-BFF1-A04BB0AB2CBA}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="mvmt_player_footsteps_wood_hollow_01" ID="{B4322923-BB9D-4C3E-9F62-B34F5B2473E6}" ShortID="131369778">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{07B8C4CB-B8C2-40DF-B70D-B59F997586C8}">
+													<PropertyList>
+														<Property Name="ChannelConfigOverride" Type="int64" Value="16641"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="918287359"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094" ID="{4A7F745E-9FAE-401A-AA9F-B01E3208FD31}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.82627"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.30233"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="909718112"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 15" ID="{148EB784-B110-4E02-B510-2C3AA9CBC7BA}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND105748"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.11033"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.48275"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 15.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="854607197"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 15" ID="{148EB784-B110-4E02-B510-2C3AA9CBC7BA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_footsteps_wood_hollow_02" ID="{B7C5966E-A377-45AD-B1CB-992449477DD9}" ShortID="311894323">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{E827DE11-004A-45DC-8563-DECF75DF50CB}">
+													<PropertyList>
+														<Property Name="ChannelConfigOverride" Type="int64" Value="16641"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="918287359"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094" ID="{9E568A41-5580-4451-B4F8-0124329AEA9F}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.82627"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.30233"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="909718112"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 16" ID="{1ACAD18E-E1AE-4963-A3F0-62B4894675CA}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND105748"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.93792"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.26895"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 16.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="962363136"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 16" ID="{1ACAD18E-E1AE-4963-A3F0-62B4894675CA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_footsteps_wood_hollow_03" ID="{EDEA0A20-C30F-4AEC-9C67-5395DCC1AD7A}" ShortID="82688301">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{C7EECD68-8788-41AE-8FEA-7C524EAE3265}">
+													<PropertyList>
+														<Property Name="ChannelConfigOverride" Type="int64" Value="16641"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="918287359"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094" ID="{0AA01EF4-3E22-43B8-B325-92C4912FF1ED}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.82627"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.30233"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="909718112"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 17" ID="{EC4703AE-09BC-4DB0-9F35-87ECB8749648}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND105748"/>
+														<Property Name="TrimBegin" Type="Real64" Value="6.66203"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.03445"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 17.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1003887373"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 17" ID="{EC4703AE-09BC-4DB0-9F35-87ECB8749648}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="wood_solid" ID="{FD1A48B6-D37A-4967-A60C-F1406F52DC48}" ShortID="475020181">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{6D2057C5-7C90-40F0-8B86-B793B25F7B85}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{3B1DA74F-6F68-42BD-8D11-9EB97C3C3F34}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="mvmt_player_footsteps_wood_solid_01" ID="{4A3A9DE9-DFAE-4969-8F7D-E4AA7AEBFC5A}" ShortID="375514287">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{24D20470-634D-4E6A-BCDA-F5392DFC776F}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="910537391"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094" ID="{6F69DADE-F03F-4470-95F4-4022B90C6567}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.82627"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.30233"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="909718112"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130" ID="{49F2947F-9553-44CB-9FF4-4B76817CFDC7}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND1130"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.90372"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.29533"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="823311738"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130" ID="{49F2947F-9553-44CB-9FF4-4B76817CFDC7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_footsteps_wood_solid_02" ID="{59865B3E-CC58-4B4E-99DA-E4058B76DF9B}" ShortID="268223857">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{E3527DC8-FA76-45B4-86EB-3338F93593FE}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="910537391"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094" ID="{FCE868FA-DFDF-4E68-9143-3586B1446A8B}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.82627"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.30233"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="909718112"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130 1" ID="{F53CC807-CCDF-421F-9AC2-7882422E86E7}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND1130"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.75472"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.15386"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="755634811"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130 1" ID="{F53CC807-CCDF-421F-9AC2-7882422E86E7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_footsteps_wood_solid_03" ID="{25DA59D1-2707-4DBF-9A22-D9AD81272C49}" ShortID="745972852">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{31AEA458-87A8-4FEB-A6BD-6E2A472F8FC3}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="910537391"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094" ID="{0BFCF0FB-B6C1-49C0-9089-5EC69334D072}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.82627"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.30233"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="909718112"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130 2" ID="{3DE34875-1440-4FB3-968F-968504BC4CA7}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND1130"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.47178"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.89351"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="54810012"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130 2" ID="{3DE34875-1440-4FB3-968F-968504BC4CA7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="grass" ID="{C00F4283-C26A-43F6-B074-9985EBE7562D}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="wood_hollow" ID="{17873389-10DB-41ED-9F47-2DEFBDCFB126}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="wood_solid" ID="{FD1A48B6-D37A-4967-A60C-F1406F52DC48}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="sand" ID="{00C735FF-62F0-40BC-879D-E983667EF1BC}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="wood_solid" ID="{84C9E336-7B4F-4440-BB01-B28A0217A62A}"/>
+										<ItemList>
+											<ItemRef Name="wood_solid" ID="{FD1A48B6-D37A-4967-A60C-F1406F52DC48}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="sand" ID="{4FE37168-217F-44E7-A26C-8E9D25D3C492}"/>
+										<ItemList>
+											<ItemRef Name="sand" ID="{00C735FF-62F0-40BC-879D-E983667EF1BC}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="wood_hollow" ID="{868EEEA4-59AD-40C4-87A5-B8BC33C93977}"/>
+										<ItemList>
+											<ItemRef Name="wood_hollow" ID="{17873389-10DB-41ED-9F47-2DEFBDCFB126}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="grass" ID="{32E76DD1-6954-4D0F-A73E-6BAF9545BA0F}"/>
+										<ItemList>
+											<ItemRef Name="grass" ID="{C00F4283-C26A-43F6-B074-9985EBE7562D}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</PropertyContainer>
+				<PropertyContainer Name="jump" ID="{A24A2D62-CC2A-43EE-A5E4-FF3761B3294E}" ShortID="218382634">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="player_jump" ID="{1B1E3EE4-9082-4C20-A915-35A1827090EE}" ShortID="114171068">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="grass" ID="{32E76DD1-6954-4D0F-A73E-6BAF9545BA0F}" WorkUnitID="{BC628AE4-F5CD-4360-A58A-AF99AB6E9AB6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="material" ID="{325FC176-2541-4C39-99B5-19DAADB5EC8A}" WorkUnitID="{BC628AE4-F5CD-4360-A58A-AF99AB6E9AB6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="grass" ID="{176D896B-2172-4808-8250-DF427657B464}" ShortID="903346376">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8456266F-6929-4E0C-9291-A0DC07B13F87}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B5D1C8AE-F816-4FD5-A918-F5EEA147A89C}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="mvmt_player_jump_grass_01" ID="{412DF3C0-BE60-4D65-92C8-1D481A5EB24F}" ShortID="899177080">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{95E63ED8-EACD-4432-A155-87918B2A43D7}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="910537391"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Jump, Start_Soundly_SND62075" ID="{27362B63-1A15-4CD7-A998-033CF8157070}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62075"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.30915"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Jump, Start_Soundly_SND62075.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="17171743"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Grass, Jump, Start_Soundly_SND62075" ID="{27362B63-1A15-4CD7-A998-033CF8157070}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_jump_grass_02" ID="{D8B38FA7-36FC-4F8C-AAB2-AEF53C3DBAED}" ShortID="746754527">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{AFDF0331-918A-48FD-8F0B-D33349CE3115}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.63608"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.33758"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="263653341"/>
+													</MediaIDList>
+													<ObjectLists>
+														<ObjectList Name="Markers">
+															<Marker Name="" ID="{5A46C803-A420-406E-8043-57B7060015D0}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{35662AF3-5979-48B0-85D7-7E0B8A747BAA}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="0.90271"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{7F2DD4DB-23B0-43B3-86F2-E0448D82E2C1}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="1.80471"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{CB049F2C-2561-412D-989A-E59325C1BC2F}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="2.68949"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{1547B5F1-D416-497E-B126-C75B2FEF3915}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="3.64264"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{FB73739F-1B15-452F-8A39-66CFCC8152AB}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="4.61174"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{7EF75241-9E39-416D-A78B-C89ADF8D55C2}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="5.55295"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{087BD30E-8EA1-47DB-91E7-92476271DEB0}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="6.45447"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{A6FBDC7E-64EC-4C71-9E09-A350FAF6440E}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="7.35076"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{B80749B1-8BA7-4747-9C35-5837D7736853}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="8.30425"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{2E80C957-E2C1-46F1-8F14-FF0043E9151C}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="9.13917"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{63BD6C1D-E069-4723-892E-28EFFA11F8B6}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="10.04468"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{8265FC7E-FA40-40A0-AF56-576F024432B8}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="10.91252"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{90E902BE-A004-4B87-AF86-4D90958E9599}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="11.8138"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{D0DB52C9-AE75-473B-A6E6-E5AD6BFF4552}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="12.67352"/>
+																</PropertyList>
+															</Marker>
+														</ObjectList>
+													</ObjectLists>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Jump, Start_Soundly_SND62075 1" ID="{5EA55546-7FF4-4592-8861-06F18BD35D0C}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62075"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.86447"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.1908"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Jump, Start_Soundly_SND62075 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="618613504"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Grass, Jump, Start_Soundly_SND62075 1" ID="{5EA55546-7FF4-4592-8861-06F18BD35D0C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_jump_grass_03" ID="{4B5A0B2E-5A97-4A27-BDB1-9900D550FD4F}" ShortID="853995333">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{0E218E2B-2CB9-4706-A639-1F21E88F5E04}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.79479"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.39043"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="270908810"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Jump, Start_Soundly_SND62075 2" ID="{B9BD6D64-E5A7-4860-8B31-AE7466F9C2F9}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62075"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.74612"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.12969"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Jump, Start_Soundly_SND62075 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1040763014"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Grass, Jump, Start_Soundly_SND62075 2" ID="{B9BD6D64-E5A7-4860-8B31-AE7466F9C2F9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="sand" ID="{C9C9D484-366B-4B6A-8C08-A134B02C30E1}" ShortID="842979796">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0CFCA0A1-7CBA-4BB0-850E-6C2181BC9103}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{201C9C70-7380-45E3-A22C-0575DF606A7E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="mvmt_player_jump_sand_01" ID="{0E0F4A32-1C43-40FB-9130-C5787ED76CF4}" ShortID="996809705">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{09B81B48-3DA5-40F9-B00D-0857E0D19287}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="910537391"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094" ID="{FAEAC878-6CA0-479D-8B70-E8574A6317F4}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.82627"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.30233"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="909718112"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363" ID="{4A678753-0B2C-4733-9EF6-38CEC6F9A70B}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND151363"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0622"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.33862"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="334455224"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Slippers, Sand, Jump, Land, Close_Soundly_SND128587" ID="{C24F69CB-8C93-4D28-BF97-7F03719F5A9E}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND128587"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.45582"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.23891"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Slippers, Sand, Jump, Land, Close_Soundly_SND128587.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="169377686"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363" ID="{4A678753-0B2C-4733-9EF6-38CEC6F9A70B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_jump_sand_02" ID="{B5C389CB-8757-4532-A5A4-021DAAAF381A}" ShortID="599339426">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{A42975E5-E6EB-4E9F-856C-E84CC122ABAC}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.63608"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.33758"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="263653341"/>
+													</MediaIDList>
+													<ObjectLists>
+														<ObjectList Name="Markers">
+															<Marker Name="" ID="{A9A1B9BE-9532-49FA-A5D4-63C2CCB41648}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{60429D1F-7F68-477C-BB70-0B5F7B97D493}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="0.90271"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{F9E7AC2C-6A3F-4AEF-9A51-A55570186EDF}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="1.80471"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{4BD63D16-0C3E-40C5-A22C-7CFFF6B7BEC2}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="2.68949"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{A4261093-2FB0-4162-AA4F-B3C30B43A593}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="3.64264"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{96C78672-F9B0-4ED7-80F3-36BEAC87DE2D}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="4.61174"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{6059F121-2B8C-4EC2-8DF0-0810E81F249C}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="5.55295"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{C3F07AD0-E9B0-49FF-A12D-0EF95176EA17}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="6.45447"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{3F34C340-A599-441D-AC42-38C3161ABD13}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="7.35076"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{D0F350AF-3104-4D22-B03C-478AFAB20CDF}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="8.30425"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{6AAD2898-3F0D-4716-BAA8-6FE87509B250}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="9.13917"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{5E30AE83-595A-4429-903D-DE3C3D749589}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="10.04468"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{8DAE7C23-0101-49E7-8F7F-8EA06DFF013F}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="10.91252"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{8D03E282-359B-4159-8182-CBE7E1BF23B7}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="11.8138"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{58D5314D-BF99-4893-B9C3-7ED51B10DF38}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="12.67352"/>
+																</PropertyList>
+															</Marker>
+														</ObjectList>
+													</ObjectLists>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094 1" ID="{DB7DC4C1-A45F-44FA-A6A7-402FF6D896EA}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.77291"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.21614"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="986272461"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363 2" ID="{07886D18-FC1D-44C9-A75D-A6F3D8ECE7EC}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND151363"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.3807"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.69858"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="620150466"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Slippers, Sand, Jump, Land, Close_Soundly_SND128587 1" ID="{6F20D7E7-7FE3-47AE-A132-23390EB20BC1}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND128587"/>
+														<Property Name="TrimBegin" Type="Real64" Value="5.34546"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.82212"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Slippers, Sand, Jump, Land, Close_Soundly_SND128587 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="52847321"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363 2" ID="{07886D18-FC1D-44C9-A75D-A6F3D8ECE7EC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_jump_sand_03" ID="{0FF2C9D7-DB7E-484A-8518-7034092D326B}" ShortID="360197790">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{A4C291D0-7FF6-4F17-A5F1-830CB4A0E2D0}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.79479"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.39043"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="270908810"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094 3" ID="{F108196C-B921-4A1A-8246-DA0DD2409C99}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.52257"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.21751"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="775113661"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363 3" ID="{94800A8C-1011-4DD2-A66F-458016659C66}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND151363"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.88375"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.33985"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="752108999"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Slippers, Sand, Jump, Land, Close_Soundly_SND128587 2" ID="{0020D26D-F4F3-41C6-9FE2-5F127A57545A}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND128587"/>
+														<Property Name="TrimBegin" Type="Real64" Value="7.0989"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.93307"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Slippers, Sand, Jump, Land, Close_Soundly_SND128587 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="722228239"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363 3" ID="{94800A8C-1011-4DD2-A66F-458016659C66}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="wood_hollow" ID="{188EE208-CCB7-4542-BBAB-C1717EFC496E}" ShortID="45164435">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B84AD05F-8BC9-4B49-BEEA-9857FC72BE93}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{65B172CE-1378-4341-AF2B-4FF1B22B20A2}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="mvmt_player_jump_wood_hollow_01" ID="{FED45D07-C5B6-4360-B52D-F9802863E1DE}" ShortID="401914137">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{21973DE6-553F-4113-BCD6-1B7862A644FF}">
+													<PropertyList>
+														<Property Name="ChannelConfigOverride" Type="int64" Value="16641"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="918287359"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094" ID="{E92D3343-DE5B-4BEB-A327-5A4928D688C8}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.82627"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.30233"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="909718112"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 15" ID="{3C6E1772-0FF8-4A02-866F-D7EF5CF37BE1}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND105748"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.11033"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.48275"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 15.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="854607197"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Boots, Wood, Hollow, Jump, Land, Close_Soundly_SND125838" ID="{5C21ADB8-6C40-48F4-95C7-8D56C2522F18}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND125838"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.43991"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.11112"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Boots, Wood, Hollow, Jump, Land, Close_Soundly_SND125838.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="302829730"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Slippers, Wood, Hollow, Jump, Land, Close_Soundly_SND128445" ID="{74E57118-8346-4C1F-94BA-1E2E7D37CB92}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND128445"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.6522"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.48835"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Slippers, Wood, Hollow, Jump, Land, Close_Soundly_SND128445.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="372248373"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Boots, Wood, Hollow, Jump, Land, Close_Soundly_SND125838" ID="{5C21ADB8-6C40-48F4-95C7-8D56C2522F18}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_jump_wood_hollow_02" ID="{47863A14-1E42-41F5-BBF9-4E4AFFD848E8}" ShortID="687474030">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{E121CB2F-D06A-4FE1-900B-B8C7AC8F88EE}">
+													<PropertyList>
+														<Property Name="ChannelConfigOverride" Type="int64" Value="16641"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="918287359"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094" ID="{0553231E-415E-44FA-A246-C88AF201BE98}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.82627"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.30233"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="909718112"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 16" ID="{7D9B908D-BD0E-4BF1-A10C-8BD9976FE9DF}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND105748"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.93792"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.26895"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 16.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="962363136"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Boots, Wood, Hollow, Jump, Land, Close_Soundly_SND125838 1" ID="{5485EF04-772A-477D-BA3E-744EBD9587BC}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND125838"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.86607"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.43257"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Boots, Wood, Hollow, Jump, Land, Close_Soundly_SND125838 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="107212250"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Slippers, Wood, Hollow, Jump, Land, Close_Soundly_SND128445 1" ID="{E9212A40-24F3-40A2-8A8C-FC39CD500693}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND128445"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.21083"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.81286"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Slippers, Wood, Hollow, Jump, Land, Close_Soundly_SND128445 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="353414576"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Boots, Wood, Hollow, Jump, Land, Close_Soundly_SND125838 1" ID="{5485EF04-772A-477D-BA3E-744EBD9587BC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_jump_wood_hollow_03" ID="{C8270F36-27B2-4BB6-BEB7-1C4B587D665B}" ShortID="834152540">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{BD275B83-B956-4284-B5DC-6EC42ED45491}">
+													<PropertyList>
+														<Property Name="ChannelConfigOverride" Type="int64" Value="16641"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="918287359"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094" ID="{5AD1E3CA-928B-4CF2-8CF2-1071BC154195}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.82627"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.30233"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="909718112"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 17" ID="{805B493C-37D2-4EA6-BCFF-82564688C923}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND105748"/>
+														<Property Name="TrimBegin" Type="Real64" Value="6.66203"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.03445"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 17.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1003887373"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Boots, Wood, Hollow, Jump, Land, Close_Soundly_SND125838 2" ID="{6414D88A-119F-4A91-9171-2E5B1EFFDD0E}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND125838"/>
+														<Property Name="TrimBegin" Type="Real64" Value="7.77171"/>
+														<Property Name="TrimEnd" Type="Real64" Value="8.45245"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Boots, Wood, Hollow, Jump, Land, Close_Soundly_SND125838 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="256824115"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Slippers, Wood, Hollow, Jump, Land, Close_Soundly_SND128445 2" ID="{8D237C42-FA56-44D7-B472-41CB0AF6B0F7}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND128445"/>
+														<Property Name="TrimBegin" Type="Real64" Value="7.52537"/>
+														<Property Name="TrimEnd" Type="Real64" Value="8.04379"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Slippers, Wood, Hollow, Jump, Land, Close_Soundly_SND128445 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="728790736"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Boots, Wood, Hollow, Jump, Land, Close_Soundly_SND125838 2" ID="{6414D88A-119F-4A91-9171-2E5B1EFFDD0E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="wood_solid" ID="{1D5AB22E-7AF9-4FDF-929C-9CD4598B9649}" ShortID="862570573">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{9B16A73B-4C62-479F-B1DD-138599566692}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{730F999D-453C-46B7-837F-76BBE7183D4B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="mvmt_player_jump_wood_solid_01" ID="{16AA8A1A-0954-4607-B66A-B8161C3E696B}" ShortID="521569085">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{EE86B4DF-8DE8-4027-B8B9-73BF80798F70}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="910537391"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094" ID="{1F63C085-2D1D-42A2-B1E5-4D61192FE0E8}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.82627"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.30233"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="909718112"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130" ID="{9E9AE358-9D91-48EC-ABD2-F411FB511C7E}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND1130"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.90372"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.29533"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="823311738"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Slippers, Wood, Solid, Jump, Land, Close SND128659" ID="{F8F0C5D9-7EF8-4749-9426-3FB46A543403}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND128659"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.15036"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.49618"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Slippers, Wood, Solid, Jump, Land, Close SND128659.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="540169232"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Wood, Shoes, Jump, Heavy Landing_Soundly_SND85815" ID="{85CEB384-E44F-406F-8ADB-3ED61AA76E11}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND85815"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.42806"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.13299"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Wood, Shoes, Jump, Heavy Landing_Soundly_SND85815.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="697873321"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps, Human, Slippers, Wood, Solid, Jump, Land, Close SND128659" ID="{F8F0C5D9-7EF8-4749-9426-3FB46A543403}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_jump_wood_solid_02" ID="{871A5823-B90B-48AD-AC1E-DEBF566E3A03}" ShortID="988325680">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{05609F74-A41F-4A6E-8A7B-68618F43FADB}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="910537391"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094" ID="{45B41940-A81B-4E27-B2A5-80DF336E457C}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.82627"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.30233"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="909718112"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130 1" ID="{D98B51AF-DD9D-405D-A55C-AF15D8FEFCE2}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND1130"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.75472"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.15386"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="755634811"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Slippers, Wood, Solid, Jump, Land, Close SND128659 2" ID="{9E0994F7-7E97-4251-B853-0D7BC7870B2D}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND128659"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.26686"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.63864"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Slippers, Wood, Solid, Jump, Land, Close SND128659 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="813652154"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Wood, Shoes, Jump, Heavy Landing_Soundly_SND85815 1" ID="{2D5B2648-A7B1-40A8-ACC6-BCE73FBABF0B}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND85815"/>
+														<Property Name="TrimBegin" Type="Real64" Value="5.65243"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.07016"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Wood, Shoes, Jump, Heavy Landing_Soundly_SND85815 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="151837089"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps, Human, Slippers, Wood, Solid, Jump, Land, Close SND128659 2" ID="{9E0994F7-7E97-4251-B853-0D7BC7870B2D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_jump_wood_solid_03" ID="{5DB4F389-A6C0-40BF-8F48-2204B8A6731F}" ShortID="308333889">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{B8C923F7-6511-4AB8-A274-463B8AF234BA}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="910537391"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094" ID="{62285E1B-245A-417D-A29A-01A1E2399913}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.82627"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.30233"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="909718112"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130 2" ID="{60B9B555-D129-4D89-87C7-B6DC2BF07630}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND1130"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.47178"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.89351"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="54810012"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Slippers, Wood, Solid, Jump, Land, Close SND128659 3" ID="{38ECC33D-919C-461C-8EE8-56739BFE4CDB}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND128659"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.72732"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.12717"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Slippers, Wood, Solid, Jump, Land, Close SND128659 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="527710238"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Wood, Shoes, Jump, Heavy Landing_Soundly_SND85815 2" ID="{C2F5DFE0-DDE3-4C6A-B761-09FEA9A4C132}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND85815"/>
+														<Property Name="TrimBegin" Type="Real64" Value="8.91596"/>
+														<Property Name="TrimEnd" Type="Real64" Value="9.34674"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Wood, Shoes, Jump, Heavy Landing_Soundly_SND85815 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="376472262"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Footsteps, Human, Slippers, Wood, Solid, Jump, Land, Close SND128659 3" ID="{38ECC33D-919C-461C-8EE8-56739BFE4CDB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="wood_hollow" ID="{188EE208-CCB7-4542-BBAB-C1717EFC496E}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="wood_solid" ID="{1D5AB22E-7AF9-4FDF-929C-9CD4598B9649}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="grass" ID="{176D896B-2172-4808-8250-DF427657B464}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="sand" ID="{C9C9D484-366B-4B6A-8C08-A134B02C30E1}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="wood_solid" ID="{84C9E336-7B4F-4440-BB01-B28A0217A62A}"/>
+										<ItemList>
+											<ItemRef Name="wood_solid" ID="{1D5AB22E-7AF9-4FDF-929C-9CD4598B9649}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="sand" ID="{4FE37168-217F-44E7-A26C-8E9D25D3C492}"/>
+										<ItemList>
+											<ItemRef Name="sand" ID="{C9C9D484-366B-4B6A-8C08-A134B02C30E1}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="wood_hollow" ID="{868EEEA4-59AD-40C4-87A5-B8BC33C93977}"/>
+										<ItemList>
+											<ItemRef Name="wood_hollow" ID="{188EE208-CCB7-4542-BBAB-C1717EFC496E}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="grass" ID="{32E76DD1-6954-4D0F-A73E-6BAF9545BA0F}"/>
+										<ItemList>
+											<ItemRef Name="grass" ID="{176D896B-2172-4808-8250-DF427657B464}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</PropertyContainer>
+				<PropertyContainer Name="land" ID="{2BF5EB06-D5B0-4F77-BEAD-840282F16089}" ShortID="117175970">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="player_land" ID="{0CD2466C-B462-4A8C-8D45-F9F161832F7B}" ShortID="995388815">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="grass" ID="{32E76DD1-6954-4D0F-A73E-6BAF9545BA0F}" WorkUnitID="{BC628AE4-F5CD-4360-A58A-AF99AB6E9AB6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="material" ID="{325FC176-2541-4C39-99B5-19DAADB5EC8A}" WorkUnitID="{BC628AE4-F5CD-4360-A58A-AF99AB6E9AB6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="grass" ID="{F2E414B4-E4C4-44C4-B67F-B03FD2A6A488}" ShortID="472670311">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{AFC012B2-CAE3-4C99-850A-743FF5EF35F4}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{42475961-48B4-4799-9D8E-3BCBE69BD262}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="mvmt_player_land_grass_01" ID="{CE837CBF-D384-41E1-943C-B161629EBE2C}" ShortID="672226948">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{C5CCD617-F2F9-4C2C-B720-0F060CADC8ED}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="910537391"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Jump, Start_Soundly_SND62075" ID="{E761C90D-2FE1-4E6C-AE07-ABAEE349371A}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62075"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.30915"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Jump, Start_Soundly_SND62075.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="17171743"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Jump, Land 01_Soundly_SND62077" ID="{A854E73C-EF0F-4C1E-970D-27DF01F360AC}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62077"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.99367"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.32281"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Jump, Land 01_Soundly_SND62077.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="107052493"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Grass, Jump, Land 01_Soundly_SND62077" ID="{A854E73C-EF0F-4C1E-970D-27DF01F360AC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_land_grass_02" ID="{C205A52C-4743-45AB-9860-A53667178059}" ShortID="520039001">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{5E4FC088-ACCD-4F67-8F43-2EEB6316D69D}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.63608"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.33758"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="263653341"/>
+													</MediaIDList>
+													<ObjectLists>
+														<ObjectList Name="Markers">
+															<Marker Name="" ID="{E0A6F3A3-1D52-4534-A2A5-4753A6BF4CC5}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{2E1DF168-BDBC-4157-BD0A-02DA6A35B9DC}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="0.90271"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{6C20303A-5189-4DCC-97CC-E0D8DFDAA9A6}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="1.80471"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{D37EBF4C-2300-483B-8547-D57EA1B87B6D}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="2.68949"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{DF407EE7-B42E-49A0-A34E-24522612BA94}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="3.64264"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{85E22396-5A7A-495F-9E09-9888A7C58700}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="4.61174"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{2B0365DC-1E76-47CA-B1AE-29BA91AE13D1}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="5.55295"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{38133FE5-B152-41C5-B0D8-1E38158087B6}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="6.45447"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{6DE8A0BD-33A4-4E43-83D8-DA1A1793C124}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="7.35076"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{64474DAB-47BD-47AB-A35B-63508528F266}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="8.30425"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{00ACBE7D-29F4-45AC-BD1E-8D3F7F6803BB}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="9.13917"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{EDEB89C2-7144-4826-984B-E15B7C06E5DC}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="10.04468"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{1215C573-EE85-4A8B-8A9A-53FC7DACCA84}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="10.91252"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{1FEBF1AC-6E2B-4EE3-A05D-CA385E832324}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="11.8138"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{AC3768A0-68A7-45FB-B21B-8CCEB05928DE}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="12.67352"/>
+																</PropertyList>
+															</Marker>
+														</ObjectList>
+													</ObjectLists>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Jump, Start_Soundly_SND62075 1" ID="{22F42EC7-8F53-463A-AF5D-BC0F1FF79A97}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62075"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.86447"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.1908"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Jump, Start_Soundly_SND62075 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="618613504"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Jump, Land 01_Soundly_SND62077 1" ID="{CA1F3379-6D10-4FE5-A243-E9947810D4A3}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62077"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.94346"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.31648"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Jump, Land 01_Soundly_SND62077 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="980730292"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Grass, Jump, Land 01_Soundly_SND62077 1" ID="{CA1F3379-6D10-4FE5-A243-E9947810D4A3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_land_grass_03" ID="{5FCB1608-7083-49D5-9B39-E241882F2F8E}" ShortID="907183116">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{C7C72DA2-DAF0-496F-A6F6-FE652ED79739}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.79479"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.39043"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="270908810"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Jump, Start_Soundly_SND62075 2" ID="{E279F13A-0219-4CC4-9A5C-91C16709D219}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62075"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.74612"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.12969"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Jump, Start_Soundly_SND62075 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1040763014"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Jump, Land 01_Soundly_SND62077 2" ID="{CAB6A1FA-A9B4-45CE-8FA1-D75224B86119}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62077"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.89952"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.25687"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Jump, Land 01_Soundly_SND62077 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="276692612"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Grass, Jump, Land 01_Soundly_SND62077 2" ID="{CAB6A1FA-A9B4-45CE-8FA1-D75224B86119}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="sand" ID="{B43BD8D6-8EF9-43C5-9473-F4703F76289D}" ShortID="740939227">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{42787DE0-6004-4923-B6B2-AD75BFD72F92}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7EF053F2-54AA-497D-91E7-A3D53BC3B10D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="mvmt_player_land_sand_01" ID="{A14331E3-544B-4984-941E-12C0F54D0EF1}" ShortID="705864839">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{31B46F8B-5A07-4FE0-BF4C-D20A2100A64D}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="910537391"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094" ID="{A75838ED-FDFE-4650-9CA2-91E62769A84F}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.82627"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.30233"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="909718112"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363" ID="{D211782E-152E-4B2F-ACEC-DA0D38D1BEFA}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND151363"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.41035"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.95579"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="701186403"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363" ID="{D211782E-152E-4B2F-ACEC-DA0D38D1BEFA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_land_sand_02" ID="{25F71641-B3CF-41F7-A186-4251C1495D2B}" ShortID="1026054865">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{65C442C7-BD3F-4279-BE6D-AF3BCA0210CC}">
+													<PropertyList>
+														<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.63608"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.33758"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="263653341"/>
+													</MediaIDList>
+													<ObjectLists>
+														<ObjectList Name="Markers">
+															<Marker Name="" ID="{EB23BE47-5740-4968-AF76-765CF3279ECB}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{7BF513B1-E3E8-45FC-B4F9-2BB1C2425D6B}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="0.90271"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{CC90259C-59CD-4619-924B-B5FE37D5A8C4}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="1.80471"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{4EAD60F8-D188-42B6-94A0-6D0EED8D3D7B}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="2.68949"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{32952B9D-4C36-48C8-9AF1-CEAC892C5718}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="3.64264"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{95BA5B7B-5616-488E-A53F-E31C0F039B50}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="4.61174"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{36023BD4-584F-4FC9-BB2C-2FC2D1AE8B96}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="5.55295"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{F404AEC9-3AC0-45D3-B198-468B6230791B}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="6.45447"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{19780C27-DE51-428B-8BD8-5B04A448D8CE}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="7.35076"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{30AD85AB-CC08-42E1-B89B-DF14E3386052}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="8.30425"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{22E5C515-73AC-45AA-B619-DFD986FC9FD5}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="9.13917"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{BAC95006-8A4C-465E-A796-E3D26E1850D8}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="10.04468"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{1DBCA803-076A-4B0F-9B67-E69245706733}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="10.91252"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{69212BD3-8BF3-4F13-8476-C277481918EC}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="11.8138"/>
+																</PropertyList>
+															</Marker>
+															<Marker Name="" ID="{BEFEC48C-C6E8-4541-B24E-F78E6E119AAA}">
+																<PropertyList>
+																	<Property Name="Label" Type="string" Value="base64:AA=="/>
+																	<Property Name="Time" Type="Real64" Value="12.67352"/>
+																</PropertyList>
+															</Marker>
+														</ObjectList>
+													</ObjectLists>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094 1" ID="{D2FB56C5-9191-4DD5-884D-98CE75140878}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.77291"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.21614"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="986272461"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363 2" ID="{82F1DE66-2149-4692-986D-FAF764E26562}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND151363"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.73675"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.24455"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="581628536"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363 2" ID="{82F1DE66-2149-4692-986D-FAF764E26562}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_land_sand_03" ID="{1BCF945B-6F87-49B5-93ED-0D13BB4E86E8}" ShortID="319286265">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{A3EC7CB1-579F-477F-9569-F5FA2F87B569}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.79479"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.39043"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="270908810"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094 3" ID="{FF66814E-8EC0-4867-A2A3-A4B8AD8436E6}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.52257"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.21751"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="775113661"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363 3" ID="{21DA95F7-156F-4FA8-A7B6-B57BDD62652D}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND151363"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.37433"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.80668"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="77811671"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Jump, Land, Scuff, Sand_Soundly_SND151363 3" ID="{21DA95F7-156F-4FA8-A7B6-B57BDD62652D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="wood_hollow" ID="{40DC95A4-C5CB-46FB-B078-7F6797584246}" ShortID="850915361">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{01B03320-EFB6-47B2-9EE5-E87E13526A6D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{3DB61B14-9722-4F94-AFC7-731A81326BFC}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="mvmt_player_land_wood_hollow_01" ID="{50090017-6BB9-49A7-8168-22178EF08210}" ShortID="860824126">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{70683339-DA2A-485C-8832-6B042C7B516F}">
+													<PropertyList>
+														<Property Name="ChannelConfigOverride" Type="int64" Value="16641"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="918287359"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094" ID="{E7C71F4E-82C7-4243-B879-D05A36704BFB}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.82627"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.30233"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="909718112"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 15" ID="{7AFF1488-88EB-4F2D-BD2F-01C410BFDD51}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND105748"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.11033"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.48275"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 15.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="854607197"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Slippers, Wood, Hollow, Jump, Land, Close_Soundly_SND128445 2" ID="{2A304741-7D53-48C8-83F7-F5F156095D0D}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND128445"/>
+														<Property Name="TrimBegin" Type="Real64" Value="7.52537"/>
+														<Property Name="TrimEnd" Type="Real64" Value="8.04379"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Slippers, Wood, Hollow, Jump, Land, Close_Soundly_SND128445 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="728790736"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Slippers, Wood, Hollow, Jump, Land, Close_Soundly_SND128445 2" ID="{2A304741-7D53-48C8-83F7-F5F156095D0D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_land_wood_hollow_02" ID="{C17C5D93-6E36-4967-98EC-06D79266B175}" ShortID="326145497">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{B003757F-477F-4C63-9507-F247A6EC9323}">
+													<PropertyList>
+														<Property Name="ChannelConfigOverride" Type="int64" Value="16641"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="918287359"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094" ID="{F5900FE8-C6C2-4641-A08C-EB6ED76DE0A5}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.82627"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.30233"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="909718112"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 16" ID="{4C2E71E6-AF1F-435E-9B23-48C96D467BF9}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND105748"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.93792"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.26895"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 16.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="962363136"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Slippers, Wood, Hollow, Jump, Land, Close_Soundly_SND128445 1" ID="{C9EEFB63-9F5A-4435-8E05-8494B4673F34}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND128445"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.21083"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.81286"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Slippers, Wood, Hollow, Jump, Land, Close_Soundly_SND128445 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="353414576"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Slippers, Wood, Hollow, Jump, Land, Close_Soundly_SND128445 1" ID="{C9EEFB63-9F5A-4435-8E05-8494B4673F34}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_land_wood_hollow_03" ID="{1F310F3A-F208-42D9-8D84-989F68AAC3A6}" ShortID="332558896">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{FE14B4DC-7D4D-45E7-9463-191DEDA67C9F}">
+													<PropertyList>
+														<Property Name="ChannelConfigOverride" Type="int64" Value="16641"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="918287359"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094" ID="{A0CF0BA2-1F42-4050-A747-C6FA20E2759C}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.82627"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.30233"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="909718112"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 17" ID="{6CB60FA9-DF7B-45F6-AC4D-2A168EB48673}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND105748"/>
+														<Property Name="TrimBegin" Type="Real64" Value="6.66203"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.03445"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, On Wood, Slippers, Descend Stairs, Moderate Tempo SND105748 17.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1003887373"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Slippers, Wood, Hollow, Jump, Land, Close_Soundly_SND128445 2" ID="{EC4D24CA-29F6-4A09-9036-1DB8FE4E212B}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND128445"/>
+														<Property Name="TrimBegin" Type="Real64" Value="9.74664"/>
+														<Property Name="TrimEnd" Type="Real64" Value="10.78065"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Slippers, Wood, Hollow, Jump, Land, Close_Soundly_SND128445 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="995827336"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Slippers, Wood, Hollow, Jump, Land, Close_Soundly_SND128445 2" ID="{EC4D24CA-29F6-4A09-9036-1DB8FE4E212B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="wood_solid" ID="{0EBD81C2-B44A-4830-ABC5-166896C3A7F3}" ShortID="1058924587">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{95009756-0855-4AEA-B799-D1EC8E7B3674}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{AE9ECD4C-336E-44E9-926C-3CA033557EB5}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="mvmt_player_land_wood_solid_01" ID="{9A7E4D07-2147-428A-AB5D-247C404C1800}" ShortID="444096837">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{82F4A6FF-CA71-4E7A-B6E1-FE5D20C7BF4C}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="910537391"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094" ID="{F169B297-5472-47FB-BFDE-1BEC6929BE84}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.82627"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.30233"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="909718112"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130" ID="{B71E1D98-8E5E-4847-A162-FD1D16ABE27A}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND1130"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.90372"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.29533"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="823311738"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Wood, Shoes, Jump, Heavy Landing_Soundly_SND85815" ID="{2CA47CFB-4EF9-41AE-B5DA-63595CBDDAAF}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.06683"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND85815"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.42806"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.89832"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Wood, Shoes, Jump, Heavy Landing_Soundly_SND85815.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="39316405"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Wood, Shoes, Jump, Heavy Landing_Soundly_SND85815" ID="{2CA47CFB-4EF9-41AE-B5DA-63595CBDDAAF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_land_wood_solid_02" ID="{F47FBEEB-5449-4D0A-972D-A8F67F0DD9CA}" ShortID="627316532">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{F8421C2E-5B50-4201-BC41-2185A839AD6A}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="910537391"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094" ID="{B119CE3B-AFB4-426C-8C0D-B4B61CF83B27}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.82627"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.30233"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="909718112"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130 1" ID="{9CC081A5-8E07-424F-AC4C-CE7FBE021167}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND1130"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.75472"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.15386"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="755634811"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Wood, Shoes, Jump, Heavy Landing_Soundly_SND85815 1" ID="{6A56157E-E884-441D-9B04-FA0ABA8A64DB}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND85815"/>
+														<Property Name="TrimBegin" Type="Real64" Value="5.65243"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.07016"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Wood, Shoes, Jump, Heavy Landing_Soundly_SND85815 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="151837089"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Wood, Shoes, Jump, Heavy Landing_Soundly_SND85815 1" ID="{6A56157E-E884-441D-9B04-FA0ABA8A64DB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="mvmt_player_land_wood_solid_03" ID="{32BFF433-A538-45FD-BF38-256E7E93AB21}" ShortID="514591055">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EEE3E02E-F14D-4717-B967-B3339130D2A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B83EB7A0-A82E-4BBF-AF81-21AF6CABEF48}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8" ID="{D9AAFE24-C2CE-4B1D-AC6C-0BEC9C193330}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62074"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.68992"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.28568"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Grass, Walk, Single Steps_Soundly_SND62074 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="910537391"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Sand, Step Hard SND62094" ID="{687E12AB-B6FB-4C4B-8582-658853DE4F94}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND62094"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.82627"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.30233"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Sand, Step Hard SND62094.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="909718112"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130 2" ID="{EC6EB6B4-0E07-4801-8460-AABBB9112A47}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND1130"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.47178"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.89351"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\Footsteps, Human, Wood, Creaky, Leather Sole, Slow SND1130 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="54810012"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="FEETHmn_Footsteps, Human, Wood, Shoes, Jump, Heavy Landing_Soundly_SND85815 2" ID="{2DF4E619-BB34-4C9E-8955-D630E51AA240}">
+													<PropertyList>
+														<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND85815"/>
+														<Property Name="TrimBegin" Type="Real64" Value="8.91596"/>
+														<Property Name="TrimEnd" Type="Real64" Value="9.34674"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Soundly Audio\FEETHmn_Footsteps, Human, Wood, Shoes, Jump, Heavy Landing_Soundly_SND85815 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="376472262"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps, Human, Wood, Shoes, Jump, Heavy Landing_Soundly_SND85815 2" ID="{2DF4E619-BB34-4C9E-8955-D630E51AA240}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="wood_hollow" ID="{40DC95A4-C5CB-46FB-B078-7F6797584246}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="grass" ID="{F2E414B4-E4C4-44C4-B67F-B03FD2A6A488}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="wood_solid" ID="{0EBD81C2-B44A-4830-ABC5-166896C3A7F3}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="sand" ID="{B43BD8D6-8EF9-43C5-9473-F4703F76289D}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="wood_solid" ID="{84C9E336-7B4F-4440-BB01-B28A0217A62A}"/>
+										<ItemList>
+											<ItemRef Name="wood_solid" ID="{0EBD81C2-B44A-4830-ABC5-166896C3A7F3}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="sand" ID="{4FE37168-217F-44E7-A26C-8E9D25D3C492}"/>
+										<ItemList>
+											<ItemRef Name="sand" ID="{B43BD8D6-8EF9-43C5-9473-F4703F76289D}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="wood_hollow" ID="{868EEEA4-59AD-40C4-87A5-B8BC33C93977}"/>
+										<ItemList>
+											<ItemRef Name="wood_hollow" ID="{40DC95A4-C5CB-46FB-B078-7F6797584246}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="grass" ID="{32E76DD1-6954-4D0F-A73E-6BAF9545BA0F}"/>
+										<ItemList>
+											<ItemRef Name="grass" ID="{F2E414B4-E4C4-44C4-B67F-B03FD2A6A488}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</PropertyContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</Containers>
 </WwiseDocument>

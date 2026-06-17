@@ -1,0 +1,7 @@
+[gd_resource type="WwiseSwitchGroup" format=3 uid="uid://p334vs7h8qtt"]
+
+[resource]
+name = "material"
+id = 3865314626
+guid = "{325FC176-2541-4C39-99B5-19DAADB5EC8A}"
+dummy = true

@@ -1,0 +1,7 @@
+[gd_resource type="WwiseSwitchGroup" format=3 uid="uid://drvn5iskrqs1k"]
+
+[resource]
+name = "movement_speed"
+id = 1519944498
+guid = "{908625DB-C11B-4798-A760-09EBDC0C3FE6}"
+dummy = true

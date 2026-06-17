@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{7A9E3A9C-FBBB-4E67-A123-00EF5A1E48FC}" SchemaVersion="133">
 	<Events>
-		<WorkUnit Name="Movement" ID="{7A9E3A9C-FBBB-4E67-A123-00EF5A1E48FC}" PersistMode="Standalone"/>
+		<WorkUnit Name="Movement" ID="{7A9E3A9C-FBBB-4E67-A123-00EF5A1E48FC}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="mvmt_player_footsteps" ID="{816F5353-8179-4205-A27D-F2560151478D}">
+					<ChildrenList>
+						<Action Name="" ID="{A2F38585-C0FB-4381-B9DE-4CEEB698DC0D}" ShortID="4917073">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="player_footsteps" ID="{3C86B364-22F8-43F5-85D2-37609F736E1F}" WorkUnitID="{1C48E166-2B96-4875-B705-F3B5B47E35AE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="mvmt_player_jump" ID="{94355C79-E64B-4820-BE5F-F50B12419C3A}">
+					<ChildrenList>
+						<Action Name="" ID="{BA5A71CC-E9D4-4D9D-9C44-431E46B06718}" ShortID="502738919">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="player_jump" ID="{1B1E3EE4-9082-4C20-A915-35A1827090EE}" WorkUnitID="{1C48E166-2B96-4875-B705-F3B5B47E35AE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="mvmt_player_land" ID="{85724B40-2513-401A-819A-A559C949F246}">
+					<ChildrenList>
+						<Action Name="" ID="{4ED63A67-CB1B-434B-9900-D615B5CF9582}" ShortID="346231512">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="player_land" ID="{0CD2466C-B462-4A8C-8D45-F9F161832F7B}" WorkUnitID="{1C48E166-2B96-4875-B705-F3B5B47E35AE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

@@ -3,4 +3,6 @@
 exports/
 bin/
 
+addons/Wwise/native/lib/win64/editor/profile/~libwwise.windows.editor.profile.dll
 .env
+.idea
