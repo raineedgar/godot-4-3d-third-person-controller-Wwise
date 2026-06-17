@@ -79,6 +79,7 @@ radius = 0.721485
 height = 2.65424
 
 [node name="Player" type="CharacterBody3D" unique_id=126940387 groups=["damageables"]]
+collision_layer = 16385
 axis_lock_angular_x = true
 axis_lock_angular_y = true
 axis_lock_angular_z = true
@@ -133,7 +134,7 @@ debug_shape_custom_color = Color(0.658824, 1, 0, 1)
 
 [node name="GroundRayCast" type="RayCast3D" parent="." unique_id=386199974]
 target_position = Vector3(0, -0.545, 0)
-collision_mask = 254
+collision_mask = 65280
 hit_from_inside = true
 hit_back_faces = false
 collide_with_areas = true

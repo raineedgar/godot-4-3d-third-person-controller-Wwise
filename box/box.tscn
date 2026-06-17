@@ -10,6 +10,7 @@ rough = true
 [sub_resource type="BoxShape3D" id="BoxShape3D_vcweg"]
 
 [node name="Box" type="RigidBody3D" unique_id=1409916337 groups=["damageables", "targeteables"]]
+collision_layer = 1025
 physics_material_override = SubResource("PhysicsMaterial_sjlkk")
 lock_rotation = true
 script = ExtResource("1_oklwc")

@@ -29,7 +29,6 @@
 [ext_resource type="PackedScene" uid="uid://bi31qtqv1sf2s" path="res://environment/flowers/flower_patch.tscn" id="15_jqya0"]
 [ext_resource type="PackedScene" uid="uid://cnj0t3ad178q6" path="res://demo_page/demo_page.tscn" id="16_qr75n"]
 [ext_resource type="WwiseBank" uid="uid://dimjaunvt2ecr" path="res://Wwise/resources/SoundBank/{1E0FF0BC-A32C-4244-82A8-F627649BFBFD}.tres" id="20_82xsv"]
-[ext_resource type="WwiseEvent" uid="uid://fguvgpkgwbaw" path="res://Wwise/resources/Event/{A0298CD5-3CCF-43EE-96E3-0AAC746A5B44}.tres" id="20_getpj"]
 
 [sub_resource type="Environment" id="Environment_allox"]
 background_mode = 2
@@ -178,27 +177,51 @@ metadata/_edit_lock_ = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.411933, 2.6692522, 5.500216)
 material_override = ExtResource("6_q3y6j")
 
+[node name="StaticBody3D" parent="NavigationRegion3D/terrain/large_trunk" index="0" unique_id=443539478]
+collision_layer = 2051
+
 [node name="large_trunk_001" parent="NavigationRegion3D/terrain" index="2" unique_id=2103581406]
 material_override = ExtResource("6_q3y6j")
+
+[node name="StaticBody3D" parent="NavigationRegion3D/terrain/large_trunk_001" index="0" unique_id=2000541231]
+collision_layer = 2051
 
 [node name="large_trunk_002" parent="NavigationRegion3D/terrain" index="3" unique_id=961352275]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.00382, 2.6841505, 10.509199)
 material_override = ExtResource("6_q3y6j")
 
+[node name="StaticBody3D" parent="NavigationRegion3D/terrain/large_trunk_002" index="0" unique_id=103036650]
+collision_layer = 2051
+
 [node name="large_trunk_003" parent="NavigationRegion3D/terrain" index="4" unique_id=705016719]
 material_override = ExtResource("6_q3y6j")
+
+[node name="StaticBody3D" parent="NavigationRegion3D/terrain/large_trunk_003" index="0" unique_id=1453161191]
+collision_layer = 2051
 
 [node name="large_trunk_004" parent="NavigationRegion3D/terrain" index="6" unique_id=649634973]
 material_override = ExtResource("6_q3y6j")
 
+[node name="StaticBody3D" parent="NavigationRegion3D/terrain/large_trunk_004" index="0" unique_id=2077747191]
+collision_layer = 2051
+
 [node name="large_trunk_005" parent="NavigationRegion3D/terrain" index="7" unique_id=155661097]
 material_override = ExtResource("6_q3y6j")
+
+[node name="StaticBody3D" parent="NavigationRegion3D/terrain/large_trunk_005" index="0" unique_id=218622990]
+collision_layer = 2051
 
 [node name="large_trunk_006" parent="NavigationRegion3D/terrain" index="8" unique_id=890037868]
 material_override = ExtResource("6_q3y6j")
 
+[node name="StaticBody3D" parent="NavigationRegion3D/terrain/large_trunk_006" index="0" unique_id=402551675]
+collision_layer = 2051
+
 [node name="large_trunk_007" parent="NavigationRegion3D/terrain" index="9" unique_id=419160741]
 material_override = ExtResource("6_q3y6j")
+
+[node name="StaticBody3D" parent="NavigationRegion3D/terrain/large_trunk_007" index="0" unique_id=1352725907]
+collision_layer = 2051
 
 [node name="waterfall" type="MeshInstance3D" parent="NavigationRegion3D/terrain" unique_id=1821686152]
 transform = Transform3D(0.13460958, 0, 0.99089795, 0, 0.9999989, 0, -0.99089795, 0, 0.13460958, 16.142801, 8.213104, -9.726179)
@@ -414,6 +437,7 @@ mesh = SubResource("PlaneMesh_eflel")
 
 [node name="DeathPlane" type="Area3D" parent="." unique_id=505926151]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, 0)
+collision_layer = 32769
 script = ExtResource("9_i1hvo")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DeathPlane" unique_id=306286441]
@@ -1647,10 +1671,33 @@ bank = ExtResource("20_82xsv")
 load_on = 2
 
 [node name="Music" type="AkEvent3D" parent="Wwise" unique_id=1615345658]
-event = ExtResource("20_getpj")
 trigger_on = 2
 stop_on = 3
 stop_fade_time = 2000
+
+[node name="SurfaceTypeColliders" type="Node3D" parent="." unique_id=1001885052]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17835927, 0.51269627, -6.426833)
+
+[node name="Sand" type="StaticBody3D" parent="SurfaceTypeColliders" unique_id=1102921023]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.29240036, 0)
+collision_layer = 512
+collision_mask = 0
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="SurfaceTypeColliders/Sand" unique_id=1591384653]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, -0.45870638, 6.324006)
+depth = 1.31
+polygon = PackedVector2Array(10.41578, 3.1204958, -8.826735, 2.015396, -11.018971, -0.5006265, -9.928344, -8.975649, -5.979739, -13.571979, 1.9529624, -15.863581, 7.95072, -14.109222, 8.777013, -8.4516325)
+debug_color = Color(1, 0.6827289, 0.62722147, 1)
+
+[node name="Sand2" type="StaticBody3D" parent="SurfaceTypeColliders" unique_id=1843297046]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.03, 5.5782948, 10.514203)
+collision_layer = 512
+collision_mask = 0
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="SurfaceTypeColliders/Sand2" unique_id=1234128545]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, -0.45870638, 6.324006)
+depth = 0.705
+polygon = PackedVector2Array(7.480852, 6.5495634, 1.9557076, 6.7499723, -5.022232, 2.61584, -4.305874, -8.749801, -0.1953659, -14.986916, 6.6191444, -15.179548, 11.716841, -8.940609, 11.818192, -1.2713127)
 
 [connection signal="weapon_switched" from="Player" to="weapon_switch_ui" method="switch_to"]
 

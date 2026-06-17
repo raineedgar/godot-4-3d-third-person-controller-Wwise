@@ -265,11 +265,16 @@ func handle_footsteps(speed: int) -> void:
 		speed_run.set_value(self)
 	footstep_sound.post(self)
 
+#surface collision layer values
+# grass 9, sand 10, wood hollow 11, wood solid 12
+# plant 13, rock 14, metal 15, water 15,
 func handle_surface() -> void:
-	var is_grass := _ground_raycast.get_collision_mask_value(9)
+	if _ground_raycast.is_colliding():
+		var collider = _ground_raycast.get_collider()
+		
 	
 	
-	return
+
 
 
 func damage(_impact_point: Vector3, force: Vector3) -> void:

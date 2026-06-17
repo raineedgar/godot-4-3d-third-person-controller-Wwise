@@ -170,6 +170,7 @@ _data = {
 size = Vector3(0.1, 0.5, 1)
 
 [node name="FlyingEnemy" type="RigidBody3D" unique_id=2019485036 groups=["damageables", "targeteables"]]
+collision_layer = 16385
 gravity_scale = 0.0
 sleeping = true
 continuous_cd = true
