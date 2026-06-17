@@ -4,25 +4,16 @@
 [ext_resource type="Sky" uid="uid://jonn5eom7asv" path="res://environment/sky/blue_sky.tres" id="2_4bjxn"]
 [ext_resource type="PackedScene" uid="uid://ciqrpd5675boy" path="res://player/player.tscn" id="2_q87gh"]
 [ext_resource type="PackedScene" uid="uid://7j15r0ej4fwx" path="res://jumping_pad/jumping_pad.tscn" id="3_w2mh2"]
-[ext_resource type="WwiseEvent" uid="uid://osfb3x5dg60k" path="res://Wwise/resources/Event/{816F5353-8179-4205-A27D-F2560151478D}.tres" id="4_1u8w0"]
 [ext_resource type="PackedScene" uid="uid://b602ttibxesgm" path="res://level/terrain.glb" id="4_vprlf"]
-[ext_resource type="WwiseEvent" uid="uid://cg4kcqkf1ghug" path="res://Wwise/resources/Event/{85724B40-2513-401A-819A-A559C949F246}.tres" id="5_0odxb"]
 [ext_resource type="NavigationMesh" uid="uid://d1ombvi6qufpk" path="res://level/main_navmesh.res" id="5_n4asa"]
-[ext_resource type="WwiseEvent" uid="uid://b3fl0luwx73yb" path="res://Wwise/resources/Event/{94355C79-E64B-4820-BE5F-F50B12419C3A}.tres" id="6_lswn8"]
 [ext_resource type="Material" uid="uid://con3572kpt8a3" path="res://environment/large_tree_trunk/large_tree_trunk_mat.tres" id="6_q3y6j"]
-[ext_resource type="WwiseSwitch" uid="uid://itq75cg46shc" path="res://Wwise/resources/Switch/{D782088D-FAA3-4234-A5FE-1AD5DA8ED96B}.tres" id="7_0odxb"]
-[ext_resource type="WwiseSwitch" uid="uid://cuhooeujahh1r" path="res://Wwise/resources/Switch/{FB498EAC-054B-491F-96D3-9292A6876CFE}.tres" id="7_kq58d"]
 [ext_resource type="PackedScene" uid="uid://dr8slkof1nc8r" path="res://environment/trees/tree.tscn" id="7_rvx5i"]
 [ext_resource type="Shader" uid="uid://6yg3c2ga7kpw" path="res://environment/waterfall/waterfall.gdshader" id="8_getpj"]
 [ext_resource type="Shader" uid="uid://do5ydgs2eaepo" path="res://environment/water/water_shader.gdshader" id="8_trepf"]
 [ext_resource type="Texture2D" uid="uid://ssrlnj65d4bs" path="res://environment/water/textures/caustic_texture.png" id="9_8eqnd"]
 [ext_resource type="Script" uid="uid://dpwkxx17o2c33" path="res://level/death_plane.gd" id="9_i1hvo"]
-[ext_resource type="WwiseSwitch" uid="uid://bgxi8fw45nwml" path="res://Wwise/resources/Switch/{32E76DD1-6954-4D0F-A73E-6BAF9545BA0F}.tres" id="9_seu75"]
 [ext_resource type="PackedScene" uid="uid://dx8qkjcbt8emp" path="res://environment/grass/grass_chunk.tscn" id="10_8c06q"]
-[ext_resource type="WwiseSwitch" uid="uid://dsw4idvs5okmc" path="res://Wwise/resources/Switch/{4FE37168-217F-44E7-A26C-8E9D25D3C492}.tres" id="10_htxhm"]
 [ext_resource type="PackedScene" uid="uid://cn8o7sv1osssk" path="res://environment/bushes/bush.tscn" id="11_f8df7"]
-[ext_resource type="WwiseSwitch" uid="uid://rdtr18wgdsvh" path="res://Wwise/resources/Switch/{868EEEA4-59AD-40C4-87A5-B8BC33C93977}.tres" id="11_jq2sk"]
-[ext_resource type="WwiseSwitch" uid="uid://dg0qvcpg1rxpm" path="res://Wwise/resources/Switch/{84C9E336-7B4F-4440-BB01-B28A0217A62A}.tres" id="12_4k2k6"]
 [ext_resource type="PackedScene" uid="uid://cmwyiep10m4u4" path="res://box/box.tscn" id="12_xvr0j"]
 [ext_resource type="PackedScene" uid="uid://rn45gytkk6tv" path="res://enemies/bee_bot.tscn" id="13_012dc"]
 [ext_resource type="PackedScene" uid="uid://oxyn25v5khuk" path="res://enemies/beetle_bot.tscn" id="14_tmmem"]
@@ -148,15 +139,6 @@ shadow_enabled = true
 
 [node name="Player" parent="." unique_id=126940387 instance=ExtResource("2_q87gh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.298, 0.5, -13.017)
-footstep_sound = ExtResource("4_1u8w0")
-land_sound = ExtResource("5_0odxb")
-jump_sound = ExtResource("6_lswn8")
-speed_walk = ExtResource("7_kq58d")
-speed_run = ExtResource("7_0odxb")
-material_grass = ExtResource("9_seu75")
-material_sand = ExtResource("10_htxhm")
-material_wood_hollow = ExtResource("11_jq2sk")
-material_wood_solid = ExtResource("12_4k2k6")
 
 [node name="JumpingPad" parent="." unique_id=241169871 instance=ExtResource("3_w2mh2")]
 transform = Transform3D(0.893364, 0, 0.449335, 0, 1, 0, -0.449335, 0, 0.893364, -35.1316, 6.60685, 19.929)
@@ -1695,7 +1677,7 @@ collision_layer = 512
 collision_mask = 0
 
 [node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="SurfaceTypeColliders/Sand2" unique_id=1234128545]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, -0.45870638, 6.324006)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.6354842, 6.324006)
 depth = 0.705
 polygon = PackedVector2Array(7.480852, 6.5495634, 1.9557076, 6.7499723, -5.022232, 2.61584, -4.305874, -8.749801, -0.1953659, -14.986916, 6.6191444, -15.179548, 11.716841, -8.940609, 11.818192, -1.2713127)
 

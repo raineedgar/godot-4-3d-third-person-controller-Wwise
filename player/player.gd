@@ -178,6 +178,8 @@ func _physics_process(delta: float) -> void:
 
 	# Set character animation
 	if is_just_jumping:
+		handle_surface()
+		jump_sound.post(self)
 		_character_skin.jump()
 	elif not is_on_floor() and velocity.y < 0:
 		_character_skin.fall()
@@ -190,6 +192,7 @@ func _physics_process(delta: float) -> void:
 			_character_skin.set_moving(false)
 
 	if is_just_on_floor:
+		handle_surface()
 		land_sound.post(self)
 
 	var position_before := global_position
@@ -267,13 +270,26 @@ func handle_footsteps(speed: int) -> void:
 
 #surface collision layer values
 # grass 9, sand 10, wood hollow 11, wood solid 12
-# plant 13, rock 14, metal 15, water 15,
+# plant 13, rock 14, metal 15, water 16,
 func handle_surface() -> void:
 	if _ground_raycast.is_colliding():
 		var collider = _ground_raycast.get_collider()
-		
-	
-	
+		if collider.get_collision_layer_value(9):
+			material_grass.set_value(self)
+			return
+		elif collider.get_collision_layer_value(10):
+			material_sand.set_value(self)
+			return
+		elif collider.get_collision_layer_value(11):
+			material_wood_hollow.set_value(self)
+			return
+		elif collider.get_collision_layer_value(12):
+			material_wood_solid.set_value(self)
+			return
+	#grass is treated as default - all others override it.
+	else:
+		material_grass.set_value(self)
+		return
 
 
 

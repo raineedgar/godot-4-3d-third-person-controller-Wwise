@@ -1,12 +1,21 @@
 [gd_scene format=3 uid="uid://ciqrpd5675boy"]
 
 [ext_resource type="Script" uid="uid://gofa4kyvcacj" path="res://player/player.gd" id="1_rvo1c"]
+[ext_resource type="WwiseEvent" uid="uid://osfb3x5dg60k" path="res://Wwise/resources/Event/{816F5353-8179-4205-A27D-F2560151478D}.tres" id="2_32hag"]
 [ext_resource type="PackedScene" uid="uid://b2ew46dlu7u7x" path="res://player/grenade_launcher.tscn" id="3_54qc4"]
 [ext_resource type="Script" uid="uid://dwd8k7raa2k87" path="res://player/camera_controller.gd" id="3_qrkly"]
+[ext_resource type="WwiseEvent" uid="uid://cg4kcqkf1ghug" path="res://Wwise/resources/Event/{85724B40-2513-401A-819A-A559C949F246}.tres" id="3_tqiix"]
 [ext_resource type="Script" uid="uid://0nwful4fsrh8" path="res://player/melee_attack_area.gd" id="3_v1vve"]
+[ext_resource type="WwiseEvent" uid="uid://b3fl0luwx73yb" path="res://Wwise/resources/Event/{94355C79-E64B-4820-BE5F-F50B12419C3A}.tres" id="4_e7oew"]
 [ext_resource type="PackedScene" uid="uid://c0mo8tek77du4" path="res://player/character_skin.tscn" id="4_ign62"]
+[ext_resource type="WwiseSwitch" uid="uid://cuhooeujahh1r" path="res://Wwise/resources/Switch/{FB498EAC-054B-491F-96D3-9292A6876CFE}.tres" id="5_c35mf"]
+[ext_resource type="WwiseSwitch" uid="uid://itq75cg46shc" path="res://Wwise/resources/Switch/{D782088D-FAA3-4234-A5FE-1AD5DA8ED96B}.tres" id="6_65viv"]
 [ext_resource type="Script" uid="uid://dtf17612eybdg" path="res://player/coins_container.gd" id="7_8eehq"]
+[ext_resource type="WwiseSwitch" uid="uid://bgxi8fw45nwml" path="res://Wwise/resources/Switch/{32E76DD1-6954-4D0F-A73E-6BAF9545BA0F}.tres" id="7_x7c3f"]
 [ext_resource type="PackedScene" uid="uid://cqw64w6kb0fyg" path="res://player/coin/coin_visuals/coin_model.tscn" id="8_6qxxt"]
+[ext_resource type="WwiseSwitch" uid="uid://dsw4idvs5okmc" path="res://Wwise/resources/Switch/{4FE37168-217F-44E7-A26C-8E9D25D3C492}.tres" id="8_bjvpn"]
+[ext_resource type="WwiseSwitch" uid="uid://rdtr18wgdsvh" path="res://Wwise/resources/Switch/{868EEEA4-59AD-40C4-87A5-B8BC33C93977}.tres" id="9_s7qer"]
+[ext_resource type="WwiseSwitch" uid="uid://dg0qvcpg1rxpm" path="res://Wwise/resources/Switch/{84C9E336-7B4F-4440-BB01-B28A0217A62A}.tres" id="10_g4c7l"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8x2xm"]
 
@@ -86,6 +95,15 @@ axis_lock_angular_z = true
 script = ExtResource("1_rvo1c")
 bullet_speed = 14.0
 acceleration = 6.0
+footstep_sound = ExtResource("2_32hag")
+land_sound = ExtResource("3_tqiix")
+jump_sound = ExtResource("4_e7oew")
+speed_walk = ExtResource("5_c35mf")
+speed_run = ExtResource("6_65viv")
+material_grass = ExtResource("7_x7c3f")
+material_sand = ExtResource("8_bjvpn")
+material_wood_hollow = ExtResource("9_s7qer")
+material_wood_solid = ExtResource("10_g4c7l")
 
 [node name="CharacterCollisionShape" type="CollisionShape3D" parent="." unique_id=2112685367]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -133,11 +151,10 @@ max_results = 1
 debug_shape_custom_color = Color(0.658824, 1, 0, 1)
 
 [node name="GroundRayCast" type="RayCast3D" parent="." unique_id=386199974]
-target_position = Vector3(0, -0.545, 0)
+target_position = Vector3(0, -0.75, 0)
 collision_mask = 65280
 hit_from_inside = true
 hit_back_faces = false
-collide_with_areas = true
 debug_shape_custom_color = Color(0.7294118, 0, 0, 1)
 debug_shape_thickness = 4
 

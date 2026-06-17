@@ -30,9 +30,9 @@ namespace AK
             {
                 static const AkUniqueID GRASS = 4248645337U;
                 static const AkUniqueID METAL = 2473969246U;
+                static const AkUniqueID PLANT = 114672780U;
                 static const AkUniqueID ROCK = 2144363834U;
                 static const AkUniqueID SAND = 803837735U;
-                static const AkUniqueID TREE = 3322072369U;
                 static const AkUniqueID WOOD_HOLLOW = 3998272824U;
                 static const AkUniqueID WOOD_SOLID = 1286116474U;
             } // namespace SWITCH
@@ -56,7 +56,6 @@ namespace AK
         static const AkUniqueID DENSITY_FA_SSGRAIN = 2715217995U;
         static const AkUniqueID IMMERSION_FA_SSGRAIN = 2481728872U;
         static const AkUniqueID INSTRUMENT_FA_SSGRAIN = 2317409760U;
-        static const AkUniqueID NEW_GAME_PARAMETER = 3671138082U;
         static const AkUniqueID PLAYBACK_RATE = 1524500807U;
         static const AkUniqueID PROXIMITY_FA_SSGRAIN = 1791284502U;
         static const AkUniqueID RPM = 796049864U;
@@ -72,6 +71,7 @@ namespace AK
         static const AkUniqueID SS_AIR_STORM = 3715662592U;
         static const AkUniqueID SS_AIR_TIMEOFDAY = 3203397129U;
         static const AkUniqueID SS_AIR_TURBULENCE = 4160247818U;
+        static const AkUniqueID VELOCITY_NORMALISED = 2648489485U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

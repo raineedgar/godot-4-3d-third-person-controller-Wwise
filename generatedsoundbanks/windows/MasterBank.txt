@@ -6,14 +6,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	4000148184	mvmt_player_jump			\Movement\mvmt_player_jump	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
-	3865314626	material			\Default Work Unit\material	
+	3865314626	material			\Environment\material	
 
 Switch	ID	Name	Switch Group			Notes
+	114672780	plant	material			
 	803837735	sand	material			
 	1286116474	wood_solid	material			
 	2144363834	rock	material			
 	2473969246	metal	material			
-	3322072369	tree	material			
 	3998272824	wood_hollow	material			
 	4248645337	grass	material			
 
@@ -30,7 +30,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	107212250	mvmt_player_jump_wood_hollow_02	.cache\40\{4014164D-416F-EF14-9191-E3CF875E46AA}.wem		\Containers\Movement\jump\player_jump\wood_hollow\mvmt_player_jump_wood_hollow_02		54480
 	151837089	mvmt_player_land_wood_solid_02	.cache\51\{519244D9-E9E9-35D1-2952-0A899F4CCCB3}.wem		\Containers\Movement\land\player_land\wood_solid\mvmt_player_land_wood_solid_02		80300
 	256824115	mvmt_player_jump_wood_hollow_03	.cache\B0\{B0290934-0E02-EDF0-876C-5789D243AE45}.wem		\Containers\Movement\jump\player_jump\wood_hollow\mvmt_player_jump_wood_hollow_03		65510
-	263653341	mvmt_player_footsteps_grass_02	.cache\CA\{CA21FB62-59FD-A798-DB6F-EBA5047ECA63}.wem		\Containers\Movement\footsteps\player_footsteps\grass\mvmt_player_footsteps_grass_02		67872
+	263653341	mvmt_player_footsteps_grass_02	.cache\D8\{D8901454-6C09-4AA8-D667-41A40648DD38}.wem		\Containers\Movement\footsteps\player_footsteps\grass\mvmt_player_footsteps_grass_02		67872
 	270908810	mvmt_player_footsteps_grass_03	.cache\4F\{4F81C250-C193-C7A1-A79F-F2BC94DC2EF7}.wem		\Containers\Movement\footsteps\player_footsteps\grass\mvmt_player_footsteps_grass_03		57340
 	276692612	mvmt_player_land_grass_03	.cache\CF\{CF92B911-194D-D42D-9286-E5480E0EBBDD}.wem		\Containers\Movement\land\player_land\grass\mvmt_player_land_grass_03		34402
 	302829730	mvmt_player_jump_wood_hollow_01	.cache\BA\{BAAF139F-6C59-C1E3-8F4E-D7CBF9206CB7}.wem		\Containers\Movement\jump\player_jump\wood_hollow\mvmt_player_jump_wood_hollow_01		64596

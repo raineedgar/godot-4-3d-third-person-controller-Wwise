@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{8A643CC7-E8B6-AF35-7870-1F891F7D6B68}",
+    "Hash": "{CB9B273B-FFAC-6354-3346-8411CF89B651}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -136,6 +136,12 @@
       "GUID": "{3F41E622-166C-4532-BEF7-1DC9FF7EAB94}"
      },
      {
+      "Id": "2648489485",
+      "Name": "velocity_normalised",
+      "ObjectPath": "\\Game Parameters\\Movement\\velocity_normalised",
+      "GUID": "{9830258F-AD98-4DA6-A680-BB4A2E19BAAE}"
+     },
+     {
       "Id": "2648548617",
       "Name": "SS_Air_Month",
       "ObjectPath": "\\Game Parameters\\Factory Soundseed Air Game Syncs\\SS_Air_Month",
@@ -166,12 +172,6 @@
       "GUID": "{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"
      },
      {
-      "Id": "3671138082",
-      "Name": "New_Game_Parameter",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\New_Game_Parameter",
-      "GUID": "{BE46D828-DAAD-4E53-BDBA-F8D53B4499F6}"
-     },
-     {
       "Id": "3715662592",
       "Name": "SS_Air_Storm",
       "ObjectPath": "\\Game Parameters\\Factory Soundseed Air Game Syncs\\SS_Air_Storm",
@@ -194,19 +194,19 @@
      {
       "Id": "1519944498",
       "Name": "movement_speed",
-      "ObjectPath": "\\Switches\\Default Work Unit\\movement_speed",
+      "ObjectPath": "\\Switches\\Movement\\movement_speed",
       "GUID": "{908625DB-C11B-4798-A760-09EBDC0C3FE6}",
       "Switches": [
        {
         "Id": "712161704",
         "Name": "run",
-        "ObjectPath": "\\Switches\\Default Work Unit\\movement_speed\\run",
+        "ObjectPath": "\\Switches\\Movement\\movement_speed\\run",
         "GUID": "{D782088D-FAA3-4234-A5FE-1AD5DA8ED96B}"
        },
        {
         "Id": "2108779966",
         "Name": "walk",
-        "ObjectPath": "\\Switches\\Default Work Unit\\movement_speed\\walk",
+        "ObjectPath": "\\Switches\\Movement\\movement_speed\\walk",
         "GUID": "{FB498EAC-054B-491F-96D3-9292A6876CFE}"
        }
       ]
@@ -214,49 +214,49 @@
      {
       "Id": "3865314626",
       "Name": "material",
-      "ObjectPath": "\\Switches\\Default Work Unit\\material",
+      "ObjectPath": "\\Switches\\Environment\\material",
       "GUID": "{325FC176-2541-4C39-99B5-19DAADB5EC8A}",
       "Switches": [
        {
+        "Id": "114672780",
+        "Name": "plant",
+        "ObjectPath": "\\Switches\\Environment\\material\\plant",
+        "GUID": "{AF1D7538-BF6D-4FCC-99D3-9F859A227348}"
+       },
+       {
         "Id": "803837735",
         "Name": "sand",
-        "ObjectPath": "\\Switches\\Default Work Unit\\material\\sand",
+        "ObjectPath": "\\Switches\\Environment\\material\\sand",
         "GUID": "{4FE37168-217F-44E7-A26C-8E9D25D3C492}"
        },
        {
         "Id": "1286116474",
         "Name": "wood_solid",
-        "ObjectPath": "\\Switches\\Default Work Unit\\material\\wood_solid",
+        "ObjectPath": "\\Switches\\Environment\\material\\wood_solid",
         "GUID": "{84C9E336-7B4F-4440-BB01-B28A0217A62A}"
        },
        {
         "Id": "2144363834",
         "Name": "rock",
-        "ObjectPath": "\\Switches\\Default Work Unit\\material\\rock",
+        "ObjectPath": "\\Switches\\Environment\\material\\rock",
         "GUID": "{1BD3D839-9EF0-4875-BB2F-18A9D98CEF07}"
        },
        {
         "Id": "2473969246",
         "Name": "metal",
-        "ObjectPath": "\\Switches\\Default Work Unit\\material\\metal",
+        "ObjectPath": "\\Switches\\Environment\\material\\metal",
         "GUID": "{D8F48937-1999-4FD6-B19F-15F424953487}"
-       },
-       {
-        "Id": "3322072369",
-        "Name": "tree",
-        "ObjectPath": "\\Switches\\Default Work Unit\\material\\tree",
-        "GUID": "{AF1D7538-BF6D-4FCC-99D3-9F859A227348}"
        },
        {
         "Id": "3998272824",
         "Name": "wood_hollow",
-        "ObjectPath": "\\Switches\\Default Work Unit\\material\\wood_hollow",
+        "ObjectPath": "\\Switches\\Environment\\material\\wood_hollow",
         "GUID": "{868EEEA4-59AD-40C4-87A5-B8BC33C93977}"
        },
        {
         "Id": "4248645337",
         "Name": "grass",
-        "ObjectPath": "\\Switches\\Default Work Unit\\material\\grass",
+        "ObjectPath": "\\Switches\\Environment\\material\\grass",
         "GUID": "{32E76DD1-6954-4D0F-A73E-6BAF9545BA0F}"
        }
       ]
@@ -741,6 +741,6 @@
     ]
    }
   ],
-  "FileHash": "{BF180AE5-2D49-0C7B-2F86-C8556E905079}"
+  "FileHash": "{F690EAD8-E6D0-683B-08E6-CB494B1F7745}"
  }
 }
