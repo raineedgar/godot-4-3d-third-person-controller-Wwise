@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{CB9B273B-FFAC-6354-3346-8411CF89B651}",
+    "Hash": "{9FEF8250-47F7-8B99-B956-ED5FF97B2B09}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -100,6 +100,12 @@
       "GUID": "{F72E0659-4346-4E1C-A1B1-DAB46A05101E}"
      },
      {
+      "Id": "1519944498",
+      "Name": "movement_speed",
+      "ObjectPath": "\\Game Parameters\\Movement\\movement_speed",
+      "GUID": "{1943CDFA-D018-47FE-9117-1A9272E84602}"
+     },
+     {
       "Id": "1524500807",
       "Name": "Playback_Rate",
       "ObjectPath": "\\Game Parameters\\Factory Motion\\Playback_Rate",
@@ -134,12 +140,6 @@
       "Name": "Immersion_FA_SSGrain",
       "ObjectPath": "\\Game Parameters\\Factory Soundseed Grain\\Immersion_FA_SSGrain",
       "GUID": "{3F41E622-166C-4532-BEF7-1DC9FF7EAB94}"
-     },
-     {
-      "Id": "2648489485",
-      "Name": "velocity_normalised",
-      "ObjectPath": "\\Game Parameters\\Movement\\velocity_normalised",
-      "GUID": "{9830258F-AD98-4DA6-A680-BB4A2E19BAAE}"
      },
      {
       "Id": "2648548617",
@@ -192,21 +192,21 @@
     ],
     "SwitchGroups": [
      {
-      "Id": "1519944498",
-      "Name": "movement_speed",
-      "ObjectPath": "\\Switches\\Movement\\movement_speed",
+      "Id": "1088160865",
+      "Name": "movement_type",
+      "ObjectPath": "\\Switches\\Movement\\movement_type",
       "GUID": "{908625DB-C11B-4798-A760-09EBDC0C3FE6}",
       "Switches": [
        {
         "Id": "712161704",
         "Name": "run",
-        "ObjectPath": "\\Switches\\Movement\\movement_speed\\run",
+        "ObjectPath": "\\Switches\\Movement\\movement_type\\run",
         "GUID": "{D782088D-FAA3-4234-A5FE-1AD5DA8ED96B}"
        },
        {
         "Id": "2108779966",
         "Name": "walk",
-        "ObjectPath": "\\Switches\\Movement\\movement_speed\\walk",
+        "ObjectPath": "\\Switches\\Movement\\movement_type\\walk",
         "GUID": "{FB498EAC-054B-491F-96D3-9292A6876CFE}"
        }
       ]
@@ -741,6 +741,6 @@
     ]
    }
   ],
-  "FileHash": "{F690EAD8-E6D0-683B-08E6-CB494B1F7745}"
+  "FileHash": "{46E9794D-B70D-6822-27B7-2EB33B4CBA9C}"
  }
 }

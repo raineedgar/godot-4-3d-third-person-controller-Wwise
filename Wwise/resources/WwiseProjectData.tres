@@ -360,11 +360,11 @@ name = "Factory Soundseed Grain"
 id = 791549978
 
 [sub_resource type="WwiseTreeObject" id="WwiseTreeObject_7f6pv"]
-path = "\\Game Parameters\\Movement\\velocity_normalised"
+path = "\\Game Parameters\\Movement\\movement_speed"
 type = 13
-name = "velocity_normalised"
-guid = "{9830258F-AD98-4DA6-A680-BB4A2E19BAAE}"
-id = 2648489485
+name = "movement_speed"
+guid = "{1943CDFA-D018-47FE-9117-1A9272E84602}"
+id = 1519944498
 
 [sub_resource type="WwiseTreeObject" id="WwiseTreeObject_2bj2c"]
 children = [SubResource("WwiseTreeObject_7f6pv")]
@@ -434,26 +434,26 @@ name = "Environment"
 id = 1229948536
 
 [sub_resource type="WwiseTreeObject" id="WwiseTreeObject_v46i2"]
-path = "\\Switches\\Movement\\movement_speed\\run"
+path = "\\Switches\\Movement\\movement_type\\run"
 type = 10
 name = "run"
 guid = "{D782088D-FAA3-4234-A5FE-1AD5DA8ED96B}"
 id = 712161704
 
 [sub_resource type="WwiseTreeObject" id="WwiseTreeObject_uy1yx"]
-path = "\\Switches\\Movement\\movement_speed\\walk"
+path = "\\Switches\\Movement\\movement_type\\walk"
 type = 10
 name = "walk"
 guid = "{FB498EAC-054B-491F-96D3-9292A6876CFE}"
 id = 2108779966
 
 [sub_resource type="WwiseTreeObject" id="WwiseTreeObject_n8fvt"]
-path = "\\Switches\\Movement\\movement_speed"
+path = "\\Switches\\Movement\\movement_type"
 children = [SubResource("WwiseTreeObject_v46i2"), SubResource("WwiseTreeObject_uy1yx")]
 type = 11
-name = "movement_speed"
+name = "movement_type"
 guid = "{908625DB-C11B-4798-A760-09EBDC0C3FE6}"
-id = 1519944498
+id = 1088160865
 
 [sub_resource type="WwiseTreeObject" id="WwiseTreeObject_dw1g5"]
 children = [SubResource("WwiseTreeObject_n8fvt")]

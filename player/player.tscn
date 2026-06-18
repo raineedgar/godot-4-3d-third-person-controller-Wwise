@@ -16,6 +16,7 @@
 [ext_resource type="WwiseSwitch" uid="uid://dsw4idvs5okmc" path="res://Wwise/resources/Switch/{4FE37168-217F-44E7-A26C-8E9D25D3C492}.tres" id="8_bjvpn"]
 [ext_resource type="WwiseSwitch" uid="uid://rdtr18wgdsvh" path="res://Wwise/resources/Switch/{868EEEA4-59AD-40C4-87A5-B8BC33C93977}.tres" id="9_s7qer"]
 [ext_resource type="WwiseSwitch" uid="uid://dg0qvcpg1rxpm" path="res://Wwise/resources/Switch/{84C9E336-7B4F-4440-BB01-B28A0217A62A}.tres" id="10_g4c7l"]
+[ext_resource type="WwiseRTPC" uid="uid://dsae6jgc7yl7f" path="res://Wwise/resources/Game Parameter/{1943CDFA-D018-47FE-9117-1A9272E84602}.tres" id="11_tqiix"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8x2xm"]
 
@@ -104,6 +105,7 @@ material_grass = ExtResource("7_x7c3f")
 material_sand = ExtResource("8_bjvpn")
 material_wood_hollow = ExtResource("9_s7qer")
 material_wood_solid = ExtResource("10_g4c7l")
+movement_speed = ExtResource("11_tqiix")
 
 [node name="CharacterCollisionShape" type="CollisionShape3D" parent="." unique_id=2112685367]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)

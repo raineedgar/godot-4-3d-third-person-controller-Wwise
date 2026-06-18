@@ -3,9 +3,10 @@
 	<GameParameters>
 		<WorkUnit Name="Movement" ID="{EF5A0D4E-A195-4A48-95A9-8AC1C5F20880}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="velocity_normalised" ID="{9830258F-AD98-4DA6-A680-BB4A2E19BAAE}">
+				<GameParameter Name="movement_speed" ID="{1943CDFA-D018-47FE-9117-1A9272E84602}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="15"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>

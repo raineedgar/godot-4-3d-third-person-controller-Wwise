@@ -38,16 +38,16 @@ namespace AK
             } // namespace SWITCH
         } // namespace MATERIAL
 
-        namespace MOVEMENT_SPEED
+        namespace MOVEMENT_TYPE
         {
-            static const AkUniqueID GROUP = 1519944498U;
+            static const AkUniqueID GROUP = 1088160865U;
 
             namespace SWITCH
             {
                 static const AkUniqueID RUN = 712161704U;
                 static const AkUniqueID WALK = 2108779966U;
             } // namespace SWITCH
-        } // namespace MOVEMENT_SPEED
+        } // namespace MOVEMENT_TYPE
 
     } // namespace SWITCHES
 
@@ -56,6 +56,7 @@ namespace AK
         static const AkUniqueID DENSITY_FA_SSGRAIN = 2715217995U;
         static const AkUniqueID IMMERSION_FA_SSGRAIN = 2481728872U;
         static const AkUniqueID INSTRUMENT_FA_SSGRAIN = 2317409760U;
+        static const AkUniqueID MOVEMENT_SPEED = 1519944498U;
         static const AkUniqueID PLAYBACK_RATE = 1524500807U;
         static const AkUniqueID PROXIMITY_FA_SSGRAIN = 1791284502U;
         static const AkUniqueID RPM = 796049864U;
@@ -71,7 +72,6 @@ namespace AK
         static const AkUniqueID SS_AIR_STORM = 3715662592U;
         static const AkUniqueID SS_AIR_TIMEOFDAY = 3203397129U;
         static const AkUniqueID SS_AIR_TURBULENCE = 4160247818U;
-        static const AkUniqueID VELOCITY_NORMALISED = 2648489485U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

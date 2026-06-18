@@ -1,0 +1,7 @@
+[gd_resource type="WwiseRTPC" format=3 uid="uid://dsae6jgc7yl7f"]
+
+[resource]
+name = "movement_speed"
+id = 1519944498
+guid = "{1943CDFA-D018-47FE-9117-1A9272E84602}"
+dummy = true

@@ -8,8 +8,8 @@ const COIN_SCENE := preload("coin/coin.tscn")
 
 enum WEAPON_TYPE { DEFAULT, GRENADE }
 
-## Character maximum run speed on the ground.
 @export_category("Player Stats")
+## Character maximum run speed on the ground.
 @export var move_speed := 8.0
 ## Speed of shot bullets.
 @export var bullet_speed := 10.0
@@ -42,7 +42,7 @@ enum WEAPON_TYPE { DEFAULT, GRENADE }
 
 ## movement_speed wwise switch
 @export_group("Switches")
-@export_subgroup("Movement Speed")
+@export_subgroup("Movement Type")
 @export var speed_walk: WwiseSwitch
 @export var speed_run: WwiseSwitch
 
@@ -54,7 +54,7 @@ enum WEAPON_TYPE { DEFAULT, GRENADE }
 @export var material_wood_solid: WwiseSwitch
 
 @export_group("Game Parameters")
-@export var velocity_normalised: WwiseRTPC
+@export var movement_speed: WwiseRTPC
 
 @onready var _rotation_root: Node3D = $CharacterRotationRoot
 @onready var _camera_controller: CameraController = $CameraController
@@ -137,6 +137,12 @@ func _physics_process(delta: float) -> void:
 	if _move_direction.length() == 0 and velocity.length() < stopping_speed:
 		velocity = Vector3.ZERO
 	velocity.y = y_velocity
+	
+	# wwise move speed game parameter
+	if velocity.length() <= 15:
+		movement_speed.set_value(self, velocity.length())
+	else:
+		movement_speed.set_value(self, 15)
 
 	# Set aiming camera and UI
 	if is_aiming:
